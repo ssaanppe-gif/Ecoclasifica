@@ -4229,17 +4229,26 @@ document.addEventListener("DOMContentLoaded", () => {
    PANTALLA DE BIENVENIDA
 ========================================================= */
 
-const botonComenzar =
-    document.getElementById("botonComenzar");
+document.addEventListener("DOMContentLoaded", () => {
 
-const pantallaBienvenida =
-    document.getElementById("pantallaBienvenida");
+    const botonComenzar =
+        document.getElementById(
+            "botonComenzar"
+        );
+
+    const pantallaBienvenida =
+        document.getElementById(
+            "pantallaBienvenida"
+        );
 
 
-if (
-    botonComenzar &&
-    pantallaBienvenida
-) {
+    if (
+        !botonComenzar ||
+        !pantallaBienvenida
+    ) {
+        return;
+    }
+
 
     botonComenzar.addEventListener(
         "click",
@@ -4260,4 +4269,4 @@ if (
         }
     );
 
-}
+});
