@@ -575,8 +575,206 @@
             </div>
 
         </section>
+<!-- =========================================
+     RETO ECOCLASIFICA
+========================================= -->
+
+<section id="quiz" class="quiz-section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            🧠 RETO ECOCLASIFICA
+        </span>
+
+        <h2>
+            ¿Cuánto sabes sobre reciclaje?
+        </h2>
+
+        <p>
+            Responde 10 preguntas y demuestra
+            cuánto sabes sobre la correcta
+            clasificación de residuos.
+        </p>
+
+    </div>
 
 
+    <div class="quiz-card">
+
+        <div class="quiz-header">
+
+            <span id="quizProgreso">
+                Pregunta 0 de 10
+            </span>
+
+            <span class="quiz-score">
+                ⭐
+                <strong id="quizPuntos">
+                    0
+                </strong>
+            </span>
+
+        </div>
+
+
+        <div
+            id="quizIcono"
+            class="quiz-icon"
+        >
+            ♻️
+        </div>
+
+
+        <h3 id="quizPregunta">
+            Pulsa "Comenzar reto" para empezar.
+        </h3>
+
+
+        <div
+            id="quizOpciones"
+            class="quiz-opciones"
+        ></div>
+
+
+        <div
+            id="quizResultado"
+            class="quiz-resultado"
+        ></div>
+
+
+        <button
+            id="quizBoton"
+            class="primary-button"
+            type="button"
+            onclick="iniciarQuiz()"
+        >
+            🎮 Comenzar reto
+        </button>
+
+    </div>
+
+</section>
+<section id="estadisticas" class="estadisticas-section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            📊 TU ACTIVIDAD
+        </span>
+
+        <h2>
+            Tus estadísticas
+        </h2>
+
+        <p>
+            Mira cómo estás utilizando ECOCLASIFICA.
+        </p>
+
+    </div>
+
+    <div class="estadisticas-grid">
+
+        <div class="estadistica-card">
+
+            <div class="estadistica-icon">
+                ♻️
+            </div>
+
+            <strong id="estadisticaResiduos">
+                0
+            </strong>
+
+            <span>
+                Residuos disponibles
+            </span>
+
+        </div>
+
+        <div class="estadistica-card">
+
+            <div class="estadistica-icon">
+                ⭐
+            </div>
+
+            <strong id="estadisticaFavoritos">
+                0
+            </strong>
+
+            <span>
+                Residuos guardados
+            </span>
+
+        </div>
+
+        <div class="estadistica-card">
+
+            <div class="estadistica-icon">
+                🧠
+            </div>
+
+            <strong id="estadisticaPuntos">
+                0
+            </strong>
+
+            <span>
+                Puntos del quiz
+            </span>
+
+        </div>
+
+        <div class="estadistica-card">
+
+            <div class="estadistica-icon">
+                ✅
+            </div>
+
+            <strong id="estadisticaAciertos">
+                0
+            </strong>
+
+            <span>
+                Respuestas correctas
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     MIS RESIDUOS GUARDADOS
+========================================= -->
+
+<section
+    id="misGuardados"
+    class="guardados-section"
+>
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            ⭐ MI COLECCIÓN
+        </span>
+
+        <h2>
+            Mis residuos guardados
+        </h2>
+
+        <p>
+            Aquí puedes volver a consultar
+            los residuos que hayas guardado.
+        </p>
+
+    </div>
+
+
+    <div
+        id="listaGuardados"
+        class="guardados-grid"
+    ></div>
+
+</section>
         <!-- =========================================
              CONSEJOS
         ========================================== -->
