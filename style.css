@@ -4709,3 +4709,19 @@ body.modo-oscuro .tip-card .tip-icon {
         width: 100%;
     }
 }
+/* =========================================================
+   SALIDA DE LA PANTALLA DE BIENVENIDA
+========================================================= */
+
+.pantalla-bienvenida.bienvenida-salir {
+    opacity: 0;
+
+    transform:
+        scale(1.03);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.65s ease,
+        transform 0.65s ease;
+}
