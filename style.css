@@ -2204,4 +2204,130 @@ a {
         font-size: 26px;
     }
 
+}/* =========================================================
+   CLASIFICADOR RÁPIDO
+========================================================= */
+
+.clasificador-rapido {
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 28px;
+
+    background: white;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+.clasificador-icono {
+
+    font-size: 3rem;
+
+    margin-bottom: 10px;
+
+}
+
+
+.clasificador-form {
+
+    display: flex;
+
+    gap: 10px;
+
+    max-width: 700px;
+
+    margin: 25px auto 10px;
+
+}
+
+
+.clasificador-form input {
+
+    flex: 1;
+
+    padding: 15px 18px;
+
+    border-radius: 12px;
+
+    border: 1px solid
+        rgba(0, 0, 0, 0.15);
+
+    font-size: 1rem;
+
+}
+
+
+.clasificador-form button {
+
+    padding: 15px 22px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+}
+
+
+.resultado-clasificador {
+
+    margin-top: 25px;
+
+}
+
+
+.clasificador-exito {
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(0, 0, 0, 0.035);
+
+}
+
+
+.clasificador-residuo-icono {
+
+    font-size: 4rem;
+
+    margin-bottom: 10px;
+
+}
+
+
+.clasificador-error {
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(0, 0, 0, 0.04);
+
+}
+
+
+@media (max-width: 700px) {
+
+    .clasificador-form {
+
+        flex-direction: column;
+
+    }
+
 }
