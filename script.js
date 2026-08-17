@@ -385,7 +385,565 @@ const residuos = [
             "caja leche",
             "leche"
         ]
+    },
+       { 
+        id: 17,
+        nombre: "Vaso de plástico",
+        nombreCorto: "Vaso plástico",
+        categoria: "plastico",
+        icono: "🥤",
+        tipo: "Plástico",
+        material: "Plástico",
+        descripcion: "Los vasos de plástico son residuos comunes que deben gestionarse de acuerdo con las posibilidades de recuperación disponibles.",
+        instrucciones: "Vacía el vaso, retira restos de bebidas y sepáralo según el sistema de clasificación disponible.",
+        consejo: "Utiliza vasos reutilizables para reducir el consumo de productos descartables.",
+        palabrasClave: [
+            "vaso",
+            "vaso plastico",
+            "vaso de plastico",
+            "vasito",
+            "plastico"
+        ]
+    },
+
+    {
+        id: 18,
+        nombre: "Envase de yogur",
+        nombreCorto: "Yogur",
+        categoria: "plastico",
+        icono: "🥛",
+        tipo: "Plástico",
+        material: "Plástico",
+        descripcion: "Los envases de yogur suelen estar fabricados con plástico y pueden gestionarse como material recuperable dependiendo del sistema local.",
+        instrucciones: "Vacía el envase y retira los restos de alimento antes de separarlo.",
+        consejo: "Enjuaga los envases cuando sea necesario para evitar contaminación de otros materiales.",
+        palabrasClave: [
+            "yogur",
+            "yogurt",
+            "envase yogur",
+            "vasito yogur",
+            "plastico"
+        ]
+    },
+
+    {
+        id: 19,
+        nombre: "Botella de detergente",
+        nombreCorto: "Envase de detergente",
+        categoria: "plastico",
+        icono: "🧴",
+        tipo: "Plástico",
+        material: "Plástico",
+        descripcion: "Los envases de productos de limpieza están hechos normalmente de plástico y pueden recuperarse cuando el sistema local los acepta.",
+        instrucciones: "Vacía completamente el envase y sepáralo de otros residuos.",
+        consejo: "No mezcles restos de productos químicos diferentes.",
+        palabrasClave: [
+            "detergente",
+            "botella detergente",
+            "envase detergente",
+            "limpieza",
+            "plastico"
+        ]
+    },
+
+    {
+        id: 20,
+        nombre: "Botella de aceite",
+        nombreCorto: "Envase de aceite",
+        categoria: "plastico",
+        icono: "🫗",
+        tipo: "Plástico",
+        material: "Plástico",
+        descripcion: "Los envases de aceite pueden ser de plástico y deben vaciarse antes de su separación.",
+        instrucciones: "Vacía el contenido y evita dejar grandes cantidades de aceite dentro del envase.",
+        consejo: "Nunca viertas aceite usado directamente al desagüe.",
+        palabrasClave: [
+            "aceite",
+            "botella aceite",
+            "envase aceite",
+            "aceite cocina",
+            "plastico"
+        ]
+    },
+
+    {
+        id: 21,
+        nombre: "Caja de cereal",
+        nombreCorto: "Caja de cereal",
+        categoria: "papel",
+        icono: "🥣",
+        tipo: "Reciclable",
+        material: "Cartón",
+        descripcion: "Las cajas de cereal suelen estar fabricadas de cartón y pueden reciclarse cuando están limpias y secas.",
+        instrucciones: "Vacía completamente la caja y aplástala antes de separarla.",
+        consejo: "Aprovecha las cajas de cartón para manualidades o almacenamiento.",
+        palabrasClave: [
+            "cereal",
+            "caja cereal",
+            "carton cereal",
+            "cartón",
+            "caja"
+        ]
+    },
+
+    {
+        id: 22,
+        nombre: "Cuaderno viejo",
+        nombreCorto: "Cuaderno",
+        categoria: "papel",
+        icono: "📒",
+        tipo: "Reciclable",
+        material: "Papel y cartón",
+        descripcion: "Los cuadernos contienen principalmente papel, aunque pueden incluir espirales, tapas y otros materiales.",
+        instrucciones: "Separa los materiales diferentes cuando sea necesario y recupera las hojas de papel.",
+        consejo: "Utiliza las páginas que todavía estén libres antes de desechar el cuaderno.",
+        palabrasClave: [
+            "cuaderno",
+            "libreta",
+            "hojas",
+            "papel",
+            "cuaderno viejo"
+        ]
+    },
+
+    {
+        id: 23,
+        nombre: "Revista",
+        nombreCorto: "Revista",
+        categoria: "papel",
+        icono: "📖",
+        tipo: "Reciclable",
+        material: "Papel",
+        descripcion: "Las revistas pueden formar parte de la recuperación de papel cuando se encuentran limpias y secas.",
+        instrucciones: "Mantén el material seco y sepáralo de restos de comida o líquidos.",
+        consejo: "Puedes reutilizar revistas para proyectos escolares y manualidades.",
+        palabrasClave: [
+            "revista",
+            "revistas",
+            "papel",
+            "lectura"
+        ]
+    },
+
+    {
+        id: 24,
+        nombre: "Tarjeta de cartón",
+        nombreCorto: "Cartulina",
+        categoria: "papel",
+        icono: "🗂️",
+        tipo: "Reciclable",
+        material: "Cartón",
+        descripcion: "Las tarjetas y cartulinas hechas principalmente de papel o cartón pueden recuperarse cuando están limpias.",
+        instrucciones: "Retira elementos que sean de plástico, metal u otros materiales cuando sea necesario.",
+        consejo: "Reutiliza tarjetas y cartulinas para trabajos escolares.",
+        palabrasClave: [
+            "tarjeta",
+            "cartulina",
+            "carton",
+            "cartón",
+            "papel"
+        ]
+    },
+
+    {
+        id: 25,
+        nombre: "Frasco de mermelada",
+        nombreCorto: "Frasco de mermelada",
+        categoria: "vidrio",
+        icono: "🍓",
+        tipo: "Reciclable",
+        material: "Vidrio",
+        descripcion: "Los frascos de vidrio utilizados para alimentos pueden reutilizarse o reciclarse.",
+        instrucciones: "Vacía el frasco, retira los restos y sepáralo del resto de residuos.",
+        consejo: "Puedes reutilizar el frasco para almacenar alimentos u objetos pequeños.",
+        palabrasClave: [
+            "mermelada",
+            "frasco mermelada",
+            "frasco",
+            "vidrio",
+            "tarro"
+        ]
+    },
+
+    {
+        id: 26,
+        nombre: "Frasco de perfume",
+        nombreCorto: "Perfume",
+        categoria: "vidrio",
+        icono: "🧴",
+        tipo: "Vidrio",
+        material: "Vidrio",
+        descripcion: "Muchos frascos de perfume están fabricados principalmente de vidrio.",
+        instrucciones: "Asegúrate de que el recipiente esté vacío y manipúlalo con cuidado.",
+        consejo: "Algunos frascos pueden reutilizarse para decoración o almacenamiento.",
+        palabrasClave: [
+            "perfume",
+            "frasco perfume",
+            "vidrio",
+            "frasco"
+        ]
+    },
+
+    {
+        id: 27,
+        nombre: "Frasco de salsa",
+        nombreCorto: "Frasco de alimentos",
+        categoria: "vidrio",
+        icono: "🍅",
+        tipo: "Reciclable",
+        material: "Vidrio",
+        descripcion: "Los frascos de salsas pueden reutilizarse o reciclarse cuando están correctamente vacíos.",
+        instrucciones: "Vacía y limpia el frasco antes de separarlo.",
+        consejo: "Puedes usarlo nuevamente como recipiente para otros alimentos.",
+        palabrasClave: [
+            "salsa",
+            "frasco salsa",
+            "tomate",
+            "frasco vidrio",
+            "vidrio"
+        ]
+    },
+
+    {
+        id: 28,
+        nombre: "Lata de gaseosa",
+        nombreCorto: "Lata de bebida",
+        categoria: "metal",
+        icono: "🥤",
+        tipo: "Reciclable",
+        material: "Aluminio",
+        descripcion: "Las latas de bebidas hechas de aluminio pueden recuperarse mediante reciclaje.",
+        instrucciones: "Vacía la bebida y separa la lata del resto de residuos.",
+        consejo: "Aplastar la lata puede reducir su volumen cuando el sistema de recolección lo permite.",
+        palabrasClave: [
+            "gaseosa",
+            "lata gaseosa",
+            "lata bebida",
+            "aluminio",
+            "lata"
+        ]
+    },
+
+    {
+        id: 29,
+        nombre: "Lata de atún",
+        nombreCorto: "Atún",
+        categoria: "metal",
+        icono: "🐟",
+        tipo: "Reciclable",
+        material: "Metal",
+        descripcion: "Las latas metálicas utilizadas para conservar alimentos pueden ser recuperadas.",
+        instrucciones: "Vacía los restos de comida y limpia la lata cuando sea necesario.",
+        consejo: "Manipula cuidadosamente los bordes de la tapa para evitar cortes.",
+        palabrasClave: [
+            "atun",
+            "atún",
+            "lata atun",
+            "lata",
+            "metal"
+        ]
+    },
+
+    {
+        id: 30,
+        nombre: "Papel aluminio",
+        nombreCorto: "Aluminio",
+        categoria: "metal",
+        icono: "🧻",
+        tipo: "Metal",
+        material: "Aluminio",
+        descripcion: "El papel aluminio está fabricado con aluminio y su recuperación depende del sistema local de reciclaje.",
+        instrucciones: "Retira restos de comida y verifica si tu sistema local acepta este material.",
+        consejo: "Reutiliza el aluminio limpio cuando sea posible.",
+        palabrasClave: [
+            "papel aluminio",
+            "aluminio",
+            "foil",
+            "metal"
+        ]
+    },
+
+    {
+        id: 31,
+        nombre: "Cáscara de huevo",
+        nombreCorto: "Cáscara de huevo",
+        categoria: "organico",
+        icono: "🥚",
+        tipo: "Orgánico",
+        material: "Materia orgánica y mineral",
+        descripcion: "Las cáscaras de huevo pueden formar parte de residuos orgánicos y utilizarse en procesos de compostaje apropiados.",
+        instrucciones: "Sepáralas de envases y otros materiales antes de colocarlas con residuos orgánicos.",
+        consejo: "Triturarlas puede facilitar su incorporación al compost.",
+        palabrasClave: [
+            "huevo",
+            "cascara huevo",
+            "cáscara huevo",
+            "organico",
+            "orgánico"
+        ]
+    },
+
+    {
+        id: 32,
+        nombre: "Posos de café",
+        nombreCorto: "Café usado",
+        categoria: "organico",
+        icono: "☕",
+        tipo: "Orgánico",
+        material: "Materia orgánica",
+        descripcion: "Los restos de café son materia orgánica que puede aprovecharse en compostaje.",
+        instrucciones: "Separa los posos de café de vasos, cucharas y otros materiales.",
+        consejo: "Puedes incorporarlos al compost junto con otros residuos orgánicos adecuados.",
+        palabrasClave: [
+            "cafe",
+            "café",
+            "cafe usado",
+            "posos",
+            "organico"
+        ]
+    },
+
+    {
+        id: 33,
+        nombre: "Hojas secas",
+        nombreCorto: "Hojas",
+        categoria: "organico",
+        icono: "🍂",
+        tipo: "Orgánico",
+        material: "Materia vegetal",
+        descripcion: "Las hojas secas son residuos vegetales que pueden aprovecharse mediante compostaje.",
+        instrucciones: "Recolecta las hojas y colócalas junto con otros residuos vegetales.",
+        consejo: "Las hojas secas aportan materia orgánica y carbono al compost.",
+        palabrasClave: [
+            "hojas",
+            "hoja seca",
+            "hojas secas",
+            "vegetal",
+            "organico"
+        ]
+    },
+
+    {
+        id: 34,
+        nombre: "Teclado",
+        nombreCorto: "Teclado de computadora",
+        categoria: "electronico",
+        icono: "⌨️",
+        tipo: "Residuo electrónico",
+        material: "Plástico, metal y componentes electrónicos",
+        descripcion: "Los teclados contienen materiales que pueden recuperarse mediante procesos especializados.",
+        instrucciones: "Llévalo a un punto de recolección de residuos electrónicos.",
+        consejo: "Si todavía funciona, considera repararlo o donarlo.",
+        palabrasClave: [
+            "teclado",
+            "keyboard",
+            "computadora",
+            "electronico",
+            "electrónico"
+        ]
+    },
+
+    {
+        id: 35,
+        nombre: "Mouse",
+        nombreCorto: "Mouse de computadora",
+        categoria: "electronico",
+        icono: "🖱️",
+        tipo: "Residuo electrónico",
+        material: "Plástico, metal y componentes electrónicos",
+        descripcion: "Los mouse contienen componentes electrónicos y no deberían terminar junto con los residuos comunes.",
+        instrucciones: "Entrégalo en un punto de recolección de residuos electrónicos.",
+        consejo: "Reutiliza o repara el dispositivo cuando todavía sea funcional.",
+        palabrasClave: [
+            "mouse",
+            "raton",
+            "ratón",
+            "computadora",
+            "electronico"
+        ]
+    },
+
+    {
+        id: 36,
+        nombre: "Audífonos",
+        nombreCorto: "Audífonos",
+        categoria: "electronico",
+        icono: "🎧",
+        tipo: "Residuo electrónico",
+        material: "Plástico, metal y componentes electrónicos",
+        descripcion: "Los audífonos contienen cables y componentes electrónicos que requieren gestión adecuada.",
+        instrucciones: "Llévalos a un sistema de recolección de residuos electrónicos cuando ya no puedan reutilizarse.",
+        consejo: "Repara cables o conectores cuando sea posible.",
+        palabrasClave: [
+            "audifonos",
+            "audífonos",
+            "auriculares",
+            "headphones",
+            "electronico"
+        ]
+    },
+
+    {
+        id: 37,
+        nombre: "Cargador de celular",
+        nombreCorto: "Cargador",
+        categoria: "electronico",
+        icono: "🔌",
+        tipo: "Residuo electrónico",
+        material: "Plástico, cobre y componentes electrónicos",
+        descripcion: "Los cargadores son aparatos eléctricos que deben gestionarse como residuos electrónicos cuando dejan de funcionar.",
+        instrucciones: "No los arrojes junto con la basura común. Entrégalos en un punto de recolección adecuado.",
+        consejo: "Guarda los cargadores compatibles que todavía funcionen.",
+        palabrasClave: [
+            "cargador",
+            "cargador celular",
+            "cargador telefono",
+            "usb",
+            "electronico"
+        ]
+    },
+
+    {
+        id: 38,
+        nombre: "Bombilla LED",
+        nombreCorto: "Foco LED",
+        categoria: "otros",
+        icono: "💡",
+        tipo: "Residuo especial",
+        material: "Vidrio, metal y componentes electrónicos",
+        descripcion: "Las bombillas LED contienen diferentes materiales y componentes que pueden requerir una gestión específica.",
+        instrucciones: "Evita romperla y verifica los puntos de recolección disponibles en tu localidad.",
+        consejo: "Utiliza bombillas eficientes para reducir el consumo de energía.",
+        palabrasClave: [
+            "foco",
+            "bombilla",
+            "led",
+            "foco led",
+            "luz"
+        ]
+    },
+
+    {
+        id: 39,
+        nombre: "Aerosol",
+        nombreCorto: "Lata de aerosol",
+        categoria: "peligroso",
+        icono: "🧴",
+        tipo: "Residuo especial",
+        material: "Metal y contenido presurizado",
+        descripcion: "Los envases de aerosol pueden contener sustancias y presión residual, por lo que requieren un manejo cuidadoso.",
+        instrucciones: "No lo perfores ni lo quemes. Consulta el sistema local para su disposición.",
+        consejo: "Nunca intentes abrir un aerosol presurizado.",
+        palabrasClave: [
+            "aerosol",
+            "spray",
+            "lata aerosol",
+            "desodorante",
+            "peligroso"
+        ]
+    },
+
+    {
+        id: 40,
+        nombre: "Batería portátil",
+        nombreCorto: "Power bank",
+        categoria: "peligroso",
+        icono: "🔋",
+        tipo: "Residuo especial",
+        material: "Batería de litio y componentes electrónicos",
+        descripcion: "Las baterías portátiles contienen componentes que requieren sistemas de recolección especializados.",
+        instrucciones: "No la arrojes a la basura común y llévala a un punto de recolección apropiado.",
+        consejo: "Evita golpear, perforar o exponer una batería dañada al calor.",
+        palabrasClave: [
+            "power bank",
+            "bateria portatil",
+            "batería portátil",
+            "bateria externa",
+            "cargador portatil"
+        ]
+    },
+
+    {
+        id: 41,
+        nombre: "Cartucho de tinta",
+        nombreCorto: "Cartucho",
+        categoria: "otros",
+        icono: "🖨️",
+        tipo: "Residuo especial",
+        material: "Plástico, tinta y componentes electrónicos",
+        descripcion: "Los cartuchos de impresora pueden contener restos de tinta y materiales que pueden recuperarse mediante programas especiales.",
+        instrucciones: "Guárdalo cerrado y busca programas de recuperación de cartuchos.",
+        consejo: "Utiliza cartuchos recargables cuando sean compatibles con tu impresora.",
+        palabrasClave: [
+            "cartucho",
+            "cartucho tinta",
+            "impresora",
+            "tinta",
+            "toner"
+        ]
+    },
+
+    {
+        id: 42,
+        nombre: "Termómetro antiguo",
+        nombreCorto: "Termómetro",
+        categoria: "peligroso",
+        icono: "🌡️",
+        tipo: "Residuo especial",
+        material: "Vidrio y componentes especiales",
+        descripcion: "Algunos termómetros antiguos pueden contener sustancias que requieren un manejo especial.",
+        instrucciones: "No lo rompas. Consulta un punto de recolección adecuado para este tipo de residuo.",
+        consejo: "Manipúlalo con cuidado y evita que niños lo tengan al alcance.",
+        palabrasClave: [
+            "termometro",
+            "termómetro",
+            "mercurio",
+            "vidrio",
+            "peligroso"
+        ]
+    },
+
+    {
+        id: 43,
+        nombre: "Zapatos viejos",
+        nombreCorto: "Calzado",
+        categoria: "otros",
+        icono: "👟",
+        tipo: "Residuo reutilizable",
+        material: "Textil, caucho y otros materiales",
+        descripcion: "El calzado usado puede reutilizarse, repararse o donarse antes de considerarse residuo.",
+        instrucciones: "Evalúa si todavía puede repararse o donarse antes de desecharlo.",
+        consejo: "Donar objetos en buen estado prolonga su vida útil.",
+        palabrasClave: [
+            "zapatos",
+            "zapatillas",
+            "calzado",
+            "zapatilla",
+            "ropa"
+        ]
+    },
+
+    {
+        id: 44,
+        nombre: "Ropa vieja",
+        nombreCorto: "Textiles",
+        categoria: "otros",
+        icono: "👕",
+        tipo: "Textil",
+        material: "Tela y fibras textiles",
+        descripcion: "La ropa que ya no utilizas puede reutilizarse, repararse o donarse.",
+        instrucciones: "Separa la ropa que aún está en buen estado y busca opciones de donación o recuperación textil.",
+        consejo: "Antes de desechar una prenda, intenta repararla o darle otro uso.",
+        palabrasClave: [
+            "ropa",
+            "camiseta",
+            "polo",
+            "pantalon",
+            "pantalón",
+            "textil"
+        ]
     }
+
 
 ];
 
@@ -398,7 +956,7 @@ const buscador = document.getElementById("buscadorResiduo");
 const resultadoBusqueda = document.getElementById("resultadoBusqueda");
 const listaResiduos = document.getElementById("listaResiduos");
 const cantidadResiduos = document.getElementById("cantidadResiduos");
-
+let residuoActual = null;
 
 /* =========================================================
    MOSTRAR CANTIDAD DE RESIDUOS
@@ -763,7 +1321,7 @@ tarjeta.addEventListener("click", () => {
 ========================================================= */
 
 function abrirModal(residuo) {
-
+residuoActual = residuo;
     const modal = document.getElementById("modalResiduo");
 
     const modalIcono = document.getElementById("modalIcono");
@@ -805,7 +1363,7 @@ function abrirModal(residuo) {
     modalConsejo.textContent =
         residuo.consejo;
 
-
+actualizarBotonFavorito();
     modal.classList.add("activo");
 
     document.body.style.overflow = "hidden";
@@ -862,4 +1420,492 @@ document.addEventListener("keydown", function(event) {
 
     }
 
-});
+});/* =========================================================
+   NAVEGACIÓN
+========================================================= */
+
+function irAlBuscador() {
+
+    const seccion = document.getElementById("buscador");
+
+    seccion.scrollIntoView({
+        behavior: "smooth"
+    });
+
+    setTimeout(() => {
+        buscador.focus();
+    }, 500);
+
+}
+
+
+function irACategorias() {
+
+    const seccion = document.getElementById("categorias");
+
+    seccion.scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+
+/* =========================================================
+   FILTRAR POR CATEGORÍA
+========================================================= */
+
+function filtrarCategoria(categoria) {
+
+    const residuosFiltrados = residuos.filter(
+        residuo => residuo.categoria === categoria
+    );
+
+    listaResiduos.innerHTML = "";
+
+    const nombreCategoria =
+        obtenerNombreCategoria(categoria);
+
+    const contador =
+        document.createElement("div");
+
+    contador.className = "resultado-filtro";
+
+    contador.innerHTML = `
+        <strong>${nombreCategoria}</strong>
+        <span>${residuosFiltrados.length} residuos encontrados</span>
+    `;
+
+    listaResiduos.parentElement.insertBefore(
+        contador,
+        listaResiduos
+    );
+
+
+    if (residuosFiltrados.length === 0) {
+
+        listaResiduos.innerHTML = `
+
+            <div class="empty-search">
+
+                <div class="empty-icon">
+                    🔍
+                </div>
+
+                <h3>
+                    No encontramos residuos
+                </h3>
+
+                <p>
+                    Todavía no tienes residuos
+                    registrados en esta categoría.
+                </p>
+
+            </div>
+
+        `;
+
+        document
+            .getElementById("residuos")
+            .scrollIntoView({
+                behavior: "smooth"
+            });
+
+        return;
+    }
+
+
+    residuosFiltrados.forEach(residuo => {
+
+        crearTarjetaResiduo(residuo);
+
+    });
+
+
+    document
+        .getElementById("residuos")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+}function crearTarjetaResiduo(residuo) {
+
+    const tarjeta =
+        document.createElement("article");
+
+    tarjeta.className = "waste-card";
+
+    tarjeta.innerHTML = `
+
+        <div class="waste-card-top">
+
+            <div class="waste-card-icon">
+                ${residuo.icono}
+            </div>
+
+            <span class="waste-arrow">
+                →
+            </span>
+
+        </div>
+
+
+        <span class="waste-category">
+            ${obtenerNombreCategoria(
+                residuo.categoria
+            )}
+        </span>
+
+
+        <h3>
+            ${residuo.nombre}
+        </h3>
+
+
+        <p>
+            ${residuo.descripcion}
+        </p>
+
+
+        <div class="waste-card-footer">
+
+            <span>
+                Ver información
+            </span>
+
+            <span>
+                🔎
+            </span>
+
+        </div>
+
+    `;
+
+
+    tarjeta.addEventListener(
+        "click",
+        () => abrirModal(residuo)
+    );
+
+
+    listaResiduos.appendChild(tarjeta);
+
+}/* =========================================================
+   SISTEMA DE FAVORITOS
+========================================================= */
+
+function obtenerFavoritos() {
+
+    return JSON.parse(
+        localStorage.getItem("ecoclasificaFavoritos") || "[]"
+    );
+
+}
+
+
+function toggleFavorito() {
+
+    if (!residuoActual) return;
+
+    let favoritos = obtenerFavoritos();
+
+    const yaEstaGuardado =
+        favoritos.includes(residuoActual.id);
+
+
+    if (yaEstaGuardado) {
+
+        favoritos = favoritos.filter(
+            id => id !== residuoActual.id
+        );
+
+    } else {
+
+        favoritos.push(residuoActual.id);
+
+    }
+
+
+    localStorage.setItem(
+        "ecoclasificaFavoritos",
+        JSON.stringify(favoritos)
+    );
+
+
+    actualizarBotonFavorito();
+
+}
+
+
+function actualizarBotonFavorito() {
+
+    const boton =
+        document.getElementById("btnFavorito");
+
+    if (!boton || !residuoActual) return;
+
+
+    const favoritos =
+        obtenerFavoritos();
+
+
+    if (
+        favoritos.includes(
+            residuoActual.id
+        )
+    ) {
+
+        boton.textContent =
+            "❤️ Guardado";
+
+    } else {
+
+        boton.textContent =
+            "⭐ Guardar residuo";
+
+    }
+
+}/* =========================================================
+   CLASIFICADOR RÁPIDO
+========================================================= */
+
+function clasificarResiduo() {
+
+    const entrada =
+        document.getElementById("entradaClasificador");
+
+    const resultado =
+        document.getElementById("resultadoClasificador");
+
+    const texto =
+        entrada.value
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .trim();
+
+
+    if (!texto) {
+
+        resultado.innerHTML = `
+            <div class="clasificador-error">
+                ⚠️ Escribe primero qué residuo tienes.
+            </div>
+        `;
+
+        return;
+    }
+
+
+    const encontrado = residuos.find(residuo => {
+
+        const nombre =
+            residuo.nombre
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "");
+
+
+        const palabras =
+            residuo.palabrasClave || [];
+
+
+        return (
+            nombre.includes(texto) ||
+            palabras.some(palabra =>
+                palabra
+                    .toLowerCase()
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "")
+                    .includes(texto)
+            )
+        );
+
+    });
+
+
+    if (!encontrado) {
+
+        resultado.innerHTML = `
+            <div class="clasificador-error">
+
+                🤔 No encontramos
+                <strong>${entrada.value}</strong>.
+
+                <br><br>
+
+                Prueba con:
+                botella, lata, papel,
+                teclado, café o batería.
+
+            </div>
+        `;
+
+        return;
+    }
+
+
+    resultado.innerHTML = `
+
+        <div class="clasificador-exito">
+
+            <div class="clasificador-residuo-icono">
+                ${encontrado.icono}
+            </div>
+
+            <h3>
+                ${encontrado.nombre}
+            </h3>
+
+            <p>
+                <strong>Categoría:</strong>
+                ${obtenerNombreCategoria(
+                    encontrado.categoria
+                )}
+            </p>
+
+            <p>
+                ${encontrado.descripcion}
+            </p>
+
+            <button
+                type="button"
+                onclick='abrirModal(${JSON.stringify(encontrado)})'
+            >
+                📋 Ver instrucciones
+            </button>
+
+        </div>
+
+    `;
+
+}/* =========================================================
+   BOTONES QUE FALTABAN
+========================================================= */
+
+function irAlBuscador() {
+
+    const seccion = document.getElementById("buscador");
+
+    if (!seccion) return;
+
+    seccion.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+    const entrada = document.getElementById("buscadorResiduo");
+
+    if (entrada) {
+        setTimeout(() => {
+            entrada.focus();
+        }, 500);
+    }
+
+}
+
+
+function irACategorias() {
+
+    const seccion = document.getElementById("categorias");
+
+    if (!seccion) return;
+
+    seccion.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+}
+
+
+function filtrarCategoria(categoria) {
+
+    const resultados = residuos.filter(
+        residuo => residuo.categoria === categoria
+    );
+
+    /*
+     * Mostramos los resultados utilizando
+     * el mismo sistema que ya tiene tu página.
+     */
+
+    if (resultados.length === 0) {
+
+        mostrarMensajeBusqueda(
+            "😕",
+            "No hay residuos en esta categoría",
+            "Todavía no tenemos residuos registrados aquí."
+        );
+
+        document.getElementById("residuos").scrollIntoView({
+            behavior: "smooth"
+        });
+
+        return;
+    }
+
+
+    listaResiduos.innerHTML = "";
+
+
+    resultados.forEach(residuo => {
+
+        const tarjeta = document.createElement("article");
+
+        tarjeta.className = "waste-card";
+
+        tarjeta.innerHTML = `
+
+            <div class="waste-card-top">
+
+                <div class="waste-card-icon">
+                    ${residuo.icono}
+                </div>
+
+                <span class="waste-arrow">
+                    →
+                </span>
+
+            </div>
+
+            <span class="waste-category">
+                ${obtenerNombreCategoria(residuo.categoria)}
+            </span>
+
+            <h3>
+                ${residuo.nombre}
+            </h3>
+
+            <p>
+                ${residuo.descripcion}
+            </p>
+
+            <div class="waste-card-footer">
+
+                <span>
+                    Ver información
+                </span>
+
+                <span>
+                    🔎
+                </span>
+
+            </div>
+
+        `;
+
+        tarjeta.addEventListener("click", () => {
+            abrirModal(residuo);
+        });
+
+        listaResiduos.appendChild(tarjeta);
+
+    });
+
+
+    document.getElementById("residuos").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+}
