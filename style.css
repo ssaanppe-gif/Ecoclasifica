@@ -4263,3 +4263,55 @@ body select {
         border-color 0.3s ease,
         box-shadow 0.3s ease;
 }
+/* =========================================================
+   BUSCADOR - MODO OSCURO COMPLETO
+========================================================= */
+
+body.modo-oscuro #buscadorResiduo {
+    background: #07130d !important;
+    color: #ecfdf5 !important;
+    border-color: #294536 !important;
+    box-shadow: none !important;
+}
+
+body.modo-oscuro #buscadorResiduo::placeholder {
+    color: #8fb8a0 !important;
+}
+
+
+/* CONTENEDOR DEL BUSCADOR */
+
+body.modo-oscuro #buscadorResiduo {
+    color-scheme: dark;
+}
+
+body.modo-oscuro #buscadorResiduo:focus {
+    border-color: #22c55e !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.12) !important;
+}
+
+
+/* ZONA QUE CONTIENE EL BUSCADOR */
+
+body.modo-oscuro #buscadorResiduo {
+    background-color: #07130d !important;
+}
+
+
+/* BOTÓN BUSCAR */
+
+body.modo-oscuro #buscadorResiduo ~ button,
+body.modo-oscuro #buscadorResiduo + button {
+    background: #166534 !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+}
+
+
+/* CONTENEDOR VISUAL */
+
+body.modo-oscuro :has(> #buscadorResiduo) {
+    background: #0a1510 !important;
+    border-color: rgba(255,255,255,0.08) !important;
+}
