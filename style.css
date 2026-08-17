@@ -3957,510 +3957,254 @@ body select {
         scale(1.08);
 }
 
-
 /* =========================================================
-   MODO OSCURO
-========================================================= */
-
-body.modo-oscuro .mensaje-flotante {
-    background:
-        rgba(16, 33, 25, 0.97);
-
-    border-color:
-        rgba(255, 255, 255, 0.08);
-
-    box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.38);
-}
-
-
-body.modo-oscuro .mensaje-flotante-icono {
-    background:
-        #193225;
-}
-
-
-body.modo-oscuro .mensaje-flotante-cerrar:hover {
-    background:
-        rgba(255, 255, 255, 0.08);
-}
-
-
-/* =========================================================
-   CELULAR
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .mensaje-flotante {
-        right: 16px;
-        bottom: 16px;
-    }
-
-} /* =========================================================
-   MODO OSCURO COMPLETO
+   ECOCLASIFICA - MODO OSCURO
 ========================================================= */
 
 body.modo-oscuro {
-    background: #050b08 !important;
-    color: #ecfdf5 !important;
+    background: #050a07 !important;
+    color: #eafff1 !important;
 }
 
 
-/* TODO EL FONDO DE LA PÁGINA */
+/* ---------- FONDOS GENERALES ---------- */
 
-body.modo-oscuro,
 body.modo-oscuro main,
-body.modo-oscuro section,
-body.modo-oscuro header,
+body.modo-oscuro section {
+    background: transparent !important;
+}
+
 body.modo-oscuro footer {
-    background-color: #050b08 !important;
+    background: #020604 !important;
+    color: #eafff1 !important;
 }
 
 
-/* CONTENEDORES Y BLOQUES */
-
-body.modo-oscuro .container,
-body.modo-oscuro .section,
-body.modo-oscuro .hero,
-body.modo-oscuro .search-section,
-body.modo-oscuro .tips-section,
-body.modo-oscuro .estadisticas-section,
-body.modo-oscuro .guardados-section,
-body.modo-oscuro .guia-section {
-    background-color: transparent !important;
-}
-
-
-/* TARJETAS */
-
-body.modo-oscuro .waste-card,
-body.modo-oscuro .category-card,
-body.modo-oscuro .estadistica-card,
-body.modo-oscuro .guardado-card,
-body.modo-oscuro .guia-card,
-body.modo-oscuro .quiz-card,
-body.modo-oscuro .result-card,
-body.modo-oscuro .clasificador-exito,
-body.modo-oscuro .clasificador-error,
-body.modo-oscuro .empty-search {
-    background: #0d1b14 !important;
-
-    color: #ecfdf5 !important;
-
-    border-color:
-        rgba(255,255,255,0.08) !important;
-
-    box-shadow:
-        0 15px 40px rgba(0,0,0,0.30) !important;
-}
-
-
-/* TARJETAS VACÍAS */
-
-body.modo-oscuro .guardado-vacio {
-    background: #0d1b14 !important;
-
-    color: #ecfdf5 !important;
-
-    border-color:
-        rgba(34,197,94,0.20) !important;
-}
-
-
-/* TEXTOS */
+/* ---------- TEXTOS ---------- */
 
 body.modo-oscuro h1,
 body.modo-oscuro h2,
 body.modo-oscuro h3,
 body.modo-oscuro h4,
 body.modo-oscuro h5,
-body.modo-oscuro h6,
 body.modo-oscuro p,
-body.modo-oscuro span,
 body.modo-oscuro label,
-body.modo-oscuro li,
+body.modo-oscuro span,
 body.modo-oscuro strong {
-    color: #ecfdf5 !important;
+    color: #eafff1 !important;
 }
 
 
-/* TEXTOS SECUNDARIOS */
+/* ---------- TARJETAS ---------- */
 
-body.modo-oscuro .section-label,
-body.modo-oscuro .waste-category,
-body.modo-oscuro .guardado-categoria,
-body.modo-oscuro .result-label,
-body.modo-oscuro .result-category {
-    color: #a7f3d0 !important;
+body.modo-oscuro .waste-card,
+body.modo-oscuro .category-card,
+body.modo-oscuro .quiz-card,
+body.modo-oscuro .estadistica-card,
+body.modo-oscuro .guardado-card,
+body.modo-oscuro .guia-card,
+body.modo-oscuro .result-card {
+    background: #0c1711 !important;
+    color: #eafff1 !important;
+    border-color: rgba(255,255,255,0.08) !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.32) !important;
 }
 
 
-/* BUSCADOR */
+/* ---------- BUSCADOR ---------- */
 
 body.modo-oscuro input,
 body.modo-oscuro textarea,
 body.modo-oscuro select {
-    background: #0d1b14 !important;
-
-    color: #ecfdf5 !important;
-
-    border-color:
-        rgba(255,255,255,0.12) !important;
-
-    box-shadow:
-        0 8px 25px rgba(0,0,0,0.20) !important;
+    background: #0b1811 !important;
+    color: #eafff1 !important;
+    border-color: #294536 !important;
 }
-
 
 body.modo-oscuro input::placeholder,
 body.modo-oscuro textarea::placeholder {
-    color: #86a695 !important;
+    color: #86a896 !important;
 }
 
 
-/* BOTONES GENERALES */
-
-body.modo-oscuro button:not(.theme-toggle) {
-    color: #ecfdf5;
-}
-
-
-/* BOTONES DEL BUSCADOR / CLASIFICADOR */
-
-body.modo-oscuro .search-button,
-body.modo-oscuro .classifier-button,
-body.modo-oscuro .clasificador-exito button {
-    background: #14532d !important;
-
-    color: white !important;
-}
-
-
-/* RESULTADOS DE BÚSQUEDA */
+/* =========================================================
+   RESULTADOS DE BÚSQUEDA
+========================================================= */
 
 body.modo-oscuro .result-card {
-    background: #0d1b14 !important;
+    background: #0a1510 !important;
+}
 
-    color: #ecfdf5 !important;
+body.modo-oscuro .result-label {
+    color: #86efac !important;
+}
+
+body.modo-oscuro .result-main h3 {
+    color: #ffffff !important;
+}
+
+body.modo-oscuro .result-category {
+    background: #173b29 !important;
+    color: #b7f7cc !important;
+}
+
+body.modo-oscuro .result-description {
+    color: #c6e6d0 !important;
 }
 
 
-/* BOTONES DEL QUIZ */
+/* MATERIAL Y TIPO */
+
+body.modo-oscuro .detail-item {
+    background: #102118 !important;
+    color: #eafff1 !important;
+    border: 1px solid #294536 !important;
+}
+
+body.modo-oscuro .detail-item small {
+    color: #91b9a0 !important;
+}
+
+body.modo-oscuro .detail-item strong {
+    color: #f2fff6 !important;
+}
+
+body.modo-oscuro .detail-icon {
+    background: #183727 !important;
+}
+
+
+/* INSTRUCCIONES */
+
+body.modo-oscuro .result-instructions {
+    background: #10291b !important;
+    color: #d7f5e0 !important;
+    border-left: 4px solid #22c55e !important;
+}
+
+body.modo-oscuro .result-instructions h4 {
+    color: #86efac !important;
+}
+
+body.modo-oscuro .result-instructions p {
+    color: #cbe9d4 !important;
+}
+
+
+/* CONSEJO */
+
+body.modo-oscuro .result-tip {
+    background: #29250f !important;
+    color: #f7e8a8 !important;
+    border: 1px solid #66571c !important;
+}
+
+body.modo-oscuro .result-tip strong {
+    color: #fcd34d !important;
+}
+
+body.modo-oscuro .result-tip p {
+    color: #f4e5a0 !important;
+}
+
+
+/* =========================================================
+   QUIZ
+========================================================= */
 
 body.modo-oscuro .quiz-opcion {
-    background: #10271c !important;
-
-    color: #ecfdf5 !important;
-
-    border-color:
-        rgba(255,255,255,0.10) !important;
+    background: #10251a !important;
+    color: #eafff1 !important;
+    border-color: #294536 !important;
 }
-
 
 body.modo-oscuro .quiz-opcion:hover:not(:disabled) {
     background: #173a28 !important;
 }
 
 
-/* ICONOS DE TARJETAS */
-
-body.modo-oscuro .waste-card-icon,
-body.modo-oscuro .guardado-icono,
-body.modo-oscuro .quiz-icon,
-body.modo-oscuro .guia-icono {
-    background: #123022 !important;
-}
-
-
-/* MODAL */
-
-body.modo-oscuro #modalResiduo {
-    background:
-        rgba(0,0,0,0.78) !important;
-}
-
-
-body.modo-oscuro #modalResiduo .modal-content,
-body.modo-oscuro #modalResiduo .modal-box {
-    background: #0d1b14 !important;
-
-    color: #ecfdf5 !important;
-
-    border-color:
-        rgba(255,255,255,0.08) !important;
-}
-
-
-/* MODAL: TEXTOS */
-
-body.modo-oscuro #modalResiduo h1,
-body.modo-oscuro #modalResiduo h2,
-body.modo-oscuro #modalResiduo h3,
-body.modo-oscuro #modalResiduo p,
-body.modo-oscuro #modalResiduo span {
-    color: #ecfdf5 !important;
-}
-
-
-/* MIS GUARDADOS */
-
-body.modo-oscuro .guardado-ver {
-    background: #123d28 !important;
-
-    color: #bbf7d0 !important;
-}
-
-
-body.modo-oscuro .guardado-eliminar {
-    background: #3b1515 !important;
-
-    color: #fecaca !important;
-}
-
-
-/* ESTADÍSTICAS */
-
-body.modo-oscuro .estadistica-card strong {
-    color: #ecfdf5 !important;
-}
-
-
-body.modo-oscuro .estadistica-card span {
-    color: #a7f3d0 !important;
-}
-
-
-/* CONSEJOS */
-
-body.modo-oscuro .tip-card,
-body.modo-oscuro .tips-card,
-body.modo-oscuro .consejo-card {
-    background: #0d1b14 !important;
-
-    color: #ecfdf5 !important;
-}
-
-
-/* NAVEGACIÓN */
-
-body.modo-oscuro nav,
-body.modo-oscuro .navbar,
-body.modo-oscuro .header {
-    background: #07110c !important;
-}
-
-
-/* PIE DE PÁGINA */
-
-body.modo-oscuro footer {
-    background: #030806 !important;
-
-    color: #ecfdf5 !important;
-}
-
-
-/* LINKS */
-
-body.modo-oscuro a {
-    color: #a7f3d0;
-}
-
-
-/* MENSAJE FLOTANTE */
-
-body.modo-oscuro .mensaje-flotante {
-    background: #0d1b14 !important;
-
-    color: #ecfdf5 !important;
-
-    border-color:
-        rgba(255,255,255,0.10) !important;
-}
-
-
-/* TRANSICIÓN */
-
-body,
-body *,
-body::before,
-body::after {
-    transition:
-        background-color 0.35s ease,
-        color 0.35s ease,
-        border-color 0.35s ease,
-        box-shadow 0.35s ease;
-}
 /* =========================================================
-   MODAL COMPLETAMENTE LEGIBLE EN MODO OSCURO
+   GUARDADOS
 ========================================================= */
 
-body.modo-oscuro #modalResiduo {
-    color: #ecfdf5 !important;
+body.modo-oscuro .guardado-vacio {
+    background: #0c1711 !important;
+    color: #eafff1 !important;
+    border-color: #294536 !important;
 }
 
 
-/* CONTENEDOR DEL MODAL */
+/* =========================================================
+   MODAL
+========================================================= */
 
-body.modo-oscuro #modalResiduo > div,
-body.modo-oscuro #modalResiduo .modal-content,
-body.modo-oscuro #modalResiduo .modal-box {
-    background: #0d1b14 !important;
-    color: #ecfdf5 !important;
+body.modo-oscuro .modal-contenido {
+    background: #0c1711 !important;
+    color: #eafff1 !important;
 }
 
-
-/* TÍTULO */
-
-body.modo-oscuro #modalTitulo {
+body.modo-oscuro .modal-contenido h2 {
     color: #ffffff !important;
 }
 
-
-/* CATEGORÍA */
-
-body.modo-oscuro #modalCategoria {
-    color: #86efac !important;
+body.modo-oscuro .modal-descripcion {
+    color: #c6e6d0 !important;
 }
 
-
-/* TEXTO PRINCIPAL */
-
-body.modo-oscuro #modalDescripcion,
-body.modo-oscuro #modalMaterial,
-body.modo-oscuro #modalTipo,
-body.modo-oscuro #modalInstrucciones,
-body.modo-oscuro #modalConsejo {
-    color: #d1fae5 !important;
+body.modo-oscuro .modal-dato {
+    background: #102118 !important;
+    color: #eafff1 !important;
 }
 
-
-/* ETIQUETAS COMO:
-   MATERIAL
-   TIPO
-   INSTRUCCIONES
-   CONSEJO */
-
-body.modo-oscuro #modalResiduo label,
-body.modo-oscuro #modalResiduo small,
-body.modo-oscuro #modalResiduo .modal-label,
-body.modo-oscuro #modalResiduo .detalle-label {
-    color: #86efac !important;
+body.modo-oscuro .modal-dato small {
+    color: #91b9a0 !important;
 }
 
-
-/* BOTONES DEL MODAL */
-
-body.modo-oscuro #modalResiduo button {
-    color: #ecfdf5 !important;
+body.modo-oscuro .modal-dato strong {
+    color: #f2fff6 !important;
 }
 
-
-body.modo-oscuro #modalResiduo .btn-cerrar,
-body.modo-oscuro #modalResiduo .modal-close {
-    color: #d1fae5 !important;
-}
-
-
-/* FONDOS DE LAS CAJAS INTERNAS */
-
-body.modo-oscuro #modalResiduo .modal-info,
-body.modo-oscuro #modalResiduo .modal-detail,
-body.modo-oscuro #modalResiduo .info-item,
-body.modo-oscuro #modalResiduo .detail-item {
-    background: #12271c !important;
-    color: #d1fae5 !important;
-
-    border-color:
-        rgba(255,255,255,0.08) !important;
-}
-
-/* ===== ARREGLO DEFINITIVO RESULTADOS EN MODO OSCURO ===== */
-
-body.modo-oscuro .result-card {
-    background: #0b1711 !important;
-    color: #e8fff0 !important;
-}
-
-/* TODO el contenido de la tarjeta */
-body.modo-oscuro .result-card,
-body.modo-oscuro .result-card * {
-    color: #e8fff0;
-}
-
-/* Nombre */
-body.modo-oscuro .result-card .result-main h3 {
-    color: #ffffff !important;
-}
-
-/* "RESIDUO IDENTIFICADO" */
-body.modo-oscuro .result-card .result-label {
-    color: #86efac !important;
-}
-
-/* Categoría */
-body.modo-oscuro .result-card .result-category {
-    background: #183c29 !important;
-    color: #b7f7cc !important;
-}
-
-/* Descripción */
-body.modo-oscuro .result-card .result-description {
-    color: #c8e8d2 !important;
-}
-
-/* Material y Tipo */
-body.modo-oscuro .result-card .result-details .detail-item {
-    background: #102219 !important;
-    color: #e8fff0 !important;
-    border: 1px solid rgba(255,255,255,0.08) !important;
-}
-
-/* Texto pequeño: Material / Tipo */
-body.modo-oscuro .result-card .detail-item small {
-    color: #8fb9a0 !important;
-}
-
-/* Valor: PET / Reciclable */
-body.modo-oscuro .result-card .detail-item strong {
-    color: #f1fff5 !important;
-}
-
-/* Iconitos */
-body.modo-oscuro .result-card .detail-icon {
-    background: #193625 !important;
-}
-
-/* Bloque de instrucciones */
-body.modo-oscuro .result-card .result-instructions {
+body.modo-oscuro .modal-instrucciones {
     background: #10291b !important;
-    color: #d8f5e0 !important;
-    border-left: 4px solid #22c55e !important;
+    color: #cbe9d4 !important;
 }
 
-/* Título de instrucciones */
-body.modo-oscuro .result-card .result-instructions h4 {
-    color: #86efac !important;
+body.modo-oscuro .modal-consejo {
+    background: #29250f !important;
+    color: #f4e5a0 !important;
 }
 
-/* Texto de instrucciones */
-body.modo-oscuro .result-card .result-instructions p {
-    color: #cdebd7 !important;
+
+/* =========================================================
+   MENSAJES FLOTANTES
+========================================================= */
+
+body.modo-oscuro .mensaje-flotante {
+    background: #0c1711 !important;
+    color: #eafff1 !important;
+    border-color: #294536 !important;
 }
 
-/* Consejo */
-body.modo-oscuro .result-card .result-tip {
-    background: #29240f !important;
-    color: #fcefb8 !important;
-    border: 1px solid #5c4b17 !important;
-}
 
-/* Título consejo */
-body.modo-oscuro .result-card .result-tip strong {
-    color: #fcd34d !important;
-}
+/* =========================================================
+   TRANSICIÓN
+========================================================= */
 
-/* Texto consejo */
-body.modo-oscuro .result-card .result-tip p {
-    color: #f5e7a8 !important;
+body,
+body section,
+body .waste-card,
+body .category-card,
+body .quiz-card,
+body .estadistica-card,
+body .guardado-card,
+body .guia-card,
+body .result-card,
+body input,
+body textarea,
+body select {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
