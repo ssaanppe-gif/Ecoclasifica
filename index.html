@@ -148,7 +148,44 @@
         ========================================== -->
 
         <section id="buscador" class="search-section">
+<div class="clasificador-rapido">
 
+    <div class="clasificador-icono">
+        ♻️
+    </div>
+
+    <h3>
+        ¿No sabes dónde va?
+    </h3>
+
+    <p>
+        Escribe el nombre de un residuo
+        y ECOCLASIFICA te dirá cómo clasificarlo.
+    </p>
+
+    <div class="clasificador-form">
+
+        <input
+            type="text"
+            id="entradaClasificador"
+            placeholder="Ej. botella de plástico"
+        >
+
+        <button
+            type="button"
+            onclick="clasificarResiduo()"
+        >
+            🔎 Clasificar
+        </button>
+
+    </div>
+
+    <div
+        id="resultadoClasificador"
+        class="resultado-clasificador"
+    ></div>
+
+</div>
             <div class="section-heading">
 
                 <span class="section-label">
@@ -910,12 +947,12 @@
 
 
         <button
-            class="modal-boton"
-            onclick="cerrarModal()"
-        >
-            Entendido 🌱
-        </button>
-
+    id="btnFavorito"
+    class="modal-boton favorito"
+    onclick="toggleFavorito()"
+>
+    ⭐ Guardar residuo
+</button>
     </div>
 
 </div>
