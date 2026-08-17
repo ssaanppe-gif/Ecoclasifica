@@ -4371,3 +4371,341 @@ body.modo-oscuro .tip-card .tip-number {
 body.modo-oscuro .tip-card .tip-icon {
     background: #183727 !important;
 }
+/* =========================================================
+   PANTALLA DE BIENVENIDA
+========================================================= */
+
+.pantalla-bienvenida {
+    position: fixed;
+    inset: 0;
+
+    z-index: 10000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(34, 197, 94, 0.18),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(16, 185, 129, 0.14),
+            transparent 35%
+        ),
+        #06110a;
+
+    color: #effff4;
+
+    text-align: center;
+}
+
+
+.bienvenida-contenido {
+    width: min(720px, 100%);
+
+    animation:
+        bienvenidaEntrada 0.8s ease both;
+}
+
+
+.bienvenida-logo {
+    width: 105px;
+    height: 105px;
+
+    margin: 0 auto 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #163b28,
+            #1f5a38
+        );
+
+    box-shadow:
+        0 20px 50px rgba(34, 197, 94, 0.20);
+
+    font-size: 4.2rem;
+
+    animation:
+        bienvenidaLogo 1s ease both;
+}
+
+
+.bienvenida-etiqueta {
+    margin-bottom: 14px;
+
+    font-size: 0.85rem;
+    font-weight: 900;
+
+    letter-spacing: 0.18em;
+}
+
+
+.bienvenida-contenido h1 {
+    margin: 0;
+
+    font-size:
+        clamp(3rem, 8vw, 6rem);
+
+    line-height: 0.98;
+
+    letter-spacing: -0.055em;
+
+    color: #ffffff;
+}
+
+
+.bienvenida-contenido h1 span {
+    display: block;
+
+    color: #4ade80;
+}
+
+
+.bienvenida-contenido p {
+    max-width: 620px;
+
+    margin:
+        24px auto 0;
+
+    font-size: 1.08rem;
+
+    line-height: 1.7;
+
+    color: #b9d9c4;
+}
+
+
+.bienvenida-datos {
+    display: flex;
+    justify-content: center;
+
+    gap: 18px;
+
+    margin:
+        34px 0 30px;
+}
+
+
+.bienvenida-datos > div {
+    min-width: 130px;
+
+    padding: 15px 18px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:
+        blur(10px);
+}
+
+
+.bienvenida-datos strong {
+    display: block;
+
+    font-size: 1.6rem;
+
+    color: #ffffff;
+}
+
+
+.bienvenida-datos span {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 0.82rem;
+
+    color: #a8c8b3;
+}
+
+
+.boton-comenzar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    min-width: 210px;
+
+    padding: 16px 26px;
+
+    border: none;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #22c55e,
+            #16a34a
+        );
+
+    color: #052e16;
+
+    font-size: 1rem;
+
+    font-weight: 900;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 18px 40px rgba(34, 197, 94, 0.22);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+
+.boton-comenzar:hover {
+    transform:
+        translateY(-4px)
+        scale(1.02);
+
+    box-shadow:
+        0 22px 45px rgba(34, 197, 94, 0.30);
+
+    filter:
+        brightness(1.05);
+}
+
+
+.boton-comenzar span {
+    font-size: 1.3rem;
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.boton-comenzar:hover span {
+    transform:
+        translateX(5px);
+}
+
+
+.bienvenida-pie {
+    margin-top: 22px;
+
+    font-size: 0.78rem;
+
+    color: #7f9f8a;
+}
+
+
+/* =========================================================
+   ANIMACIONES
+========================================================= */
+
+@keyframes bienvenidaEntrada {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(25px)
+            scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+@keyframes bienvenidaLogo {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(20px)
+            scale(0.8)
+            rotate(-8deg);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1)
+            rotate(0);
+    }
+}
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .pantalla-bienvenida {
+        padding: 22px;
+    }
+
+    .bienvenida-logo {
+        width: 85px;
+        height: 85px;
+
+        font-size: 3.3rem;
+    }
+
+    .bienvenida-contenido h1 {
+        font-size:
+            clamp(2.5rem, 14vw, 4rem);
+    }
+
+    .bienvenida-contenido p {
+        font-size: 0.95rem;
+    }
+
+    .bienvenida-datos {
+        gap: 8px;
+    }
+
+    .bienvenida-datos > div {
+        min-width: 0;
+
+        flex: 1;
+
+        padding: 13px 8px;
+    }
+
+    .bienvenida-datos strong {
+        font-size: 1.3rem;
+    }
+
+    .bienvenida-datos span {
+        font-size: 0.72rem;
+    }
+
+    .boton-comenzar {
+        width: 100%;
+    }
+}
