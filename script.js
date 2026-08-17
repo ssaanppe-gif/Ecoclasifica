@@ -4216,3 +4216,12 @@ mostrarMensajeFlotante(
     "ECOCLASIFICA",
     "¡Mensaje flotante funcionando!"
 );
+document.addEventListener("DOMContentLoaded", () => {
+
+    mostrarTodosLosResiduos();
+
+    actualizarEstadisticas();
+
+    mostrarMisGuardados();
+
+});
