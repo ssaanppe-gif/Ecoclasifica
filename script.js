@@ -2371,7 +2371,9 @@ function filtrarCategoria(categoria) {
 
     listaResiduos.appendChild(tarjeta);
 
-}/* =========================================================
+}
+
+/* =========================================================
    SISTEMA DE FAVORITOS
 ========================================================= */
 
@@ -4023,3 +4025,194 @@ function mostrarMisGuardados() {
     );
 
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    mostrarTodosLosResiduos();
+
+    actualizarEstadisticas();
+
+    mostrarMisGuardados();
+
+});
+
+/* =========================================================
+   MODO OSCURO
+========================================================= */
+
+function cambiarTema() {
+
+    document.body.classList.toggle(
+        "modo-oscuro"
+    );
+
+    const modoOscuro =
+        document.body.classList.contains(
+            "modo-oscuro"
+        );
+
+    localStorage.setItem(
+        "ecoclasificaTema",
+        modoOscuro
+            ? "oscuro"
+            : "claro"
+    );
+
+    actualizarBotonTema();
+}
+
+
+function actualizarBotonTema() {
+
+    const boton =
+        document.getElementById(
+            "botonTema"
+        );
+
+    if (!boton) return;
+
+    const modoOscuro =
+        document.body.classList.contains(
+            "modo-oscuro"
+        );
+
+    boton.textContent =
+        modoOscuro
+            ? "☀️"
+            : "🌙";
+
+    boton.setAttribute(
+        "aria-label",
+        modoOscuro
+            ? "Cambiar a modo claro"
+            : "Cambiar a modo oscuro"
+    );
+}
+
+
+/* Cargar el tema guardado */
+
+const temaGuardado =
+    localStorage.getItem(
+        "ecoclasificaTema"
+    );
+
+if (temaGuardado === "oscuro") {
+
+    document.body.classList.add(
+        "modo-oscuro"
+    );
+
+}
+
+actualizarBotonTema();
+/* =========================================================
+   MENSAJES FLOTANTES
+========================================================= */
+
+function mostrarMensajeFlotante(
+    icono,
+    titulo,
+    texto
+) {
+
+    const anterior =
+        document.querySelector(
+            ".mensaje-flotante"
+        );
+
+    if (anterior) {
+        anterior.remove();
+    }
+
+
+    const mensaje =
+        document.createElement(
+            "div"
+        );
+
+
+    mensaje.className =
+        "mensaje-flotante";
+
+
+    mensaje.innerHTML = `
+
+        <div class="mensaje-flotante-icono">
+            ${icono}
+        </div>
+
+        <div class="mensaje-flotante-contenido">
+
+            <strong>
+                ${titulo}
+            </strong>
+
+            <span>
+                ${texto}
+            </span>
+
+        </div>
+
+        <button
+            type="button"
+            class="mensaje-flotante-cerrar"
+            aria-label="Cerrar mensaje"
+        >
+            ×
+        </button>
+
+    `;
+
+
+    document.body.appendChild(
+        mensaje
+    );
+
+
+    const cerrar =
+        mensaje.querySelector(
+            ".mensaje-flotante-cerrar"
+        );
+
+
+    cerrar.addEventListener(
+        "click",
+        () => {
+            mensaje.remove();
+        }
+    );
+
+
+    requestAnimationFrame(() => {
+
+        mensaje.classList.add(
+            "mensaje-visible"
+        );
+
+    });
+
+
+    setTimeout(() => {
+
+        mensaje.classList.remove(
+            "mensaje-visible"
+        );
+
+
+        setTimeout(() => {
+
+            if (mensaje.parentElement) {
+                mensaje.remove();
+            }
+
+        }, 350);
+
+    }, 3500);
+
+}
+mostrarMensajeFlotante(
+    "✅",
+    "ECOCLASIFICA",
+    "¡Mensaje flotante funcionando!"
+);
