@@ -4375,80 +4375,92 @@ body.modo-oscuro #modalResiduo .detail-item {
         rgba(255,255,255,0.08) !important;
 }
 
-/* =========================================================
-   RESULTADO DE BÚSQUEDA - MODO OSCURO COMPLETO
-========================================================= */
+/* ===== ARREGLO DEFINITIVO RESULTADOS EN MODO OSCURO ===== */
 
 body.modo-oscuro .result-card {
     background: #0b1711 !important;
-    color: #eafff1 !important;
-    border-color: rgba(255, 255, 255, 0.08) !important;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35) !important;
+    color: #e8fff0 !important;
 }
 
-body.modo-oscuro .result-label {
-    color: #86efac !important;
+/* TODO el contenido de la tarjeta */
+body.modo-oscuro .result-card,
+body.modo-oscuro .result-card * {
+    color: #e8fff0;
 }
 
-body.modo-oscuro .result-main h3 {
+/* Nombre */
+body.modo-oscuro .result-card .result-main h3 {
     color: #ffffff !important;
 }
 
-body.modo-oscuro .result-category {
-    background: #173a28 !important;
-    color: #a7f3d0 !important;
-}
-
-body.modo-oscuro .result-description {
-    color: #c7e6d2 !important;
-}
-
-body.modo-oscuro .result-details .detail-item {
-    background: #10251a !important;
-    color: #eafff1 !important;
-    border-color: rgba(255, 255, 255, 0.08) !important;
-}
-
-body.modo-oscuro .detail-icon {
-    background: #193526 !important;
-}
-
-body.modo-oscuro .detail-item small {
-    color: #86b79a !important;
-}
-
-body.modo-oscuro .detail-item strong {
-    color: #f0fff5 !important;
-}
-
-body.modo-oscuro .result-instructions {
-    background: #10291c !important;
-    color: #d1fae5 !important;
-    border-left-color: #22c55e !important;
-}
-
-body.modo-oscuro .result-instructions h4 {
+/* "RESIDUO IDENTIFICADO" */
+body.modo-oscuro .result-card .result-label {
     color: #86efac !important;
 }
 
-body.modo-oscuro .result-instructions p {
-    color: #c7e6d2 !important;
+/* Categoría */
+body.modo-oscuro .result-card .result-category {
+    background: #183c29 !important;
+    color: #b7f7cc !important;
 }
 
-body.modo-oscuro .result-tip {
+/* Descripción */
+body.modo-oscuro .result-card .result-description {
+    color: #c8e8d2 !important;
+}
+
+/* Material y Tipo */
+body.modo-oscuro .result-card .result-details .detail-item {
+    background: #102219 !important;
+    color: #e8fff0 !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+/* Texto pequeño: Material / Tipo */
+body.modo-oscuro .result-card .detail-item small {
+    color: #8fb9a0 !important;
+}
+
+/* Valor: PET / Reciclable */
+body.modo-oscuro .result-card .detail-item strong {
+    color: #f1fff5 !important;
+}
+
+/* Iconitos */
+body.modo-oscuro .result-card .detail-icon {
+    background: #193625 !important;
+}
+
+/* Bloque de instrucciones */
+body.modo-oscuro .result-card .result-instructions {
+    background: #10291b !important;
+    color: #d8f5e0 !important;
+    border-left: 4px solid #22c55e !important;
+}
+
+/* Título de instrucciones */
+body.modo-oscuro .result-card .result-instructions h4 {
+    color: #86efac !important;
+}
+
+/* Texto de instrucciones */
+body.modo-oscuro .result-card .result-instructions p {
+    color: #cdebd7 !important;
+}
+
+/* Consejo */
+body.modo-oscuro .result-card .result-tip {
     background: #29240f !important;
-    color: #fde68a !important;
-    border-color: #5c4b17 !important;
+    color: #fcefb8 !important;
+    border: 1px solid #5c4b17 !important;
 }
 
-body.modo-oscuro .result-tip strong {
+/* Título consejo */
+body.modo-oscuro .result-card .result-tip strong {
     color: #fcd34d !important;
 }
 
-body.modo-oscuro .result-tip p {
-    color: #fde68a !important;
-}
-
-body.modo-oscuro .result-icon {
-    background: #d8f7e3 !important;
+/* Texto consejo */
+body.modo-oscuro .result-card .result-tip p {
+    color: #f5e7a8 !important;
 }
