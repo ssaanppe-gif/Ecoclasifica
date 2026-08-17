@@ -3436,93 +3436,213 @@ function iniciarQuiz() {
 
 }
 
-
 function mostrarPreguntaQuiz() {
 
     const pregunta =
-    preguntasPartida[quizPreguntaActual];
+        preguntasPartida[quizPreguntaActual];
 
-    document.getElementById("quizProgreso").textContent =
-        `Pregunta ${quizPreguntaActual + 1} de ${preguntasQuiz.length}`;
+    document.getElementById(
+        "quizProgreso"
+    ).textContent =
+        `Pregunta ${quizPreguntaActual + 1} de ${preguntasPartida.length}`;
 
-
-    document.getElementById("quizPuntos").textContent =
+    document.getElementById(
+        "quizPuntos"
+    ).textContent =
         quizPuntajeActual;
 
-
-    document.getElementById("quizIcono").textContent =
+    document.getElementById(
+        "quizIcono"
+    ).textContent =
         pregunta.icono;
 
-
-    document.getElementById("quizPregunta").textContent =
+    document.getElementById(
+        "quizPregunta"
+    ).textContent =
         pregunta.pregunta;
 
-
-    document.getElementById("quizResultado").innerHTML =
-        "";
-
+    document.getElementById(
+        "quizResultado"
+    ).innerHTML = "";
 
     const contenedor =
-        document.getElementById("quizOpciones");
-
+        document.getElementById(
+            "quizOpciones"
+        );
 
     contenedor.innerHTML = "";
 
-
     quizRespondido = false;
 
-const opcionesMezcladas =
-    pregunta.opciones
-        .map((opcion, indice) => ({
-            texto: opcion,
-            esCorrecta:
-                indice === pregunta.correcta
-        }))
-        .sort(() => Math.random() - 0.5);
+
+    const opcionesMezcladas =
+        pregunta.opciones
+            .map((opcion, indice) => ({
+                texto: opcion,
+                esCorrecta:
+                    indice === pregunta.correcta
+            }))
+            .sort(
+                () => Math.random() - 0.5
+            );
 
 
-opcionesMezcladas.forEach(opcion => {
+    opcionesMezcladas.forEach(opcion => {
 
-    const boton =
-        document.createElement("button");
+        const boton =
+            document.createElement(
+                "button"
+            );
 
+        boton.type = "button";
 
-    boton.type = "button";
+        boton.className =
+            "quiz-opcion";
 
-    boton.className =
-        "quiz-opcion";
+        boton.textContent =
+            opcion.texto;
 
+        boton.addEventListener(
+            "click",
+            () =>
+                responderQuiz(
+                    opcion.esCorrecta
+                )
+        );
 
-    boton.textContent =
-        opcion.texto;
+        contenedor.appendChild(
+            boton
+        );
 
-
-    boton.addEventListener(
-        "click",
-        () => responderQuiz(opcion.esCorrecta)
-    );
-
-
-    contenedor.appendChild(
-        boton
-    );
-
-});
-    
+    });
 
 
     const botonPrincipal =
-        document.getElementById("quizBoton");
-
+        document.getElementById(
+            "quizBoton"
+        );
 
     botonPrincipal.disabled = true;
 
-
     botonPrincipal.textContent =
-        quizPreguntaActual === preguntasQuiz.length - 1
+        quizPreguntaActual ===
+        preguntasPartida.length - 1
             ? "🏁 Ver resultado"
             : "➡️ Siguiente pregunta";
 
+}
+
+
+function responderQuiz(esCorrecta) {
+
+    if (quizRespondido)
+        return;
+
+
+    quizRespondido =
+        true;
+
+
+    const pregunta =
+        preguntasPartida[
+            quizPreguntaActual
+        ];
+
+
+    const botones =
+        document.querySelectorAll(
+            ".quiz-opcion"
+        );
+
+
+    botones.forEach(
+        boton =>
+            boton.disabled =
+                true
+    );
+
+
+    if (esCorrecta) {
+
+        quizPuntajeActual +=
+            10;
+
+
+        quizAciertosTotales++;
+
+
+        botones.forEach(
+            boton => {
+
+                if (
+                    boton.textContent ===
+                    pregunta.opciones[
+                        pregunta.correcta
+                    ]
+                ) {
+
+                    boton.classList.add(
+                        "quiz-correcto"
+                    );
+
+                }
+
+            }
+        );
+
+
+        document.getElementById(
+            "quizResultado"
+        ).innerHTML = `
+
+            <div class="quiz-success">
+                ✅ ¡Correcto!
+                +10 puntos
+            </div>
+
+            <p>
+                ${pregunta.explicacion}
+            </p>
+
+        `;
+
+    } else {
+
+        botones.forEach(
+            boton => {
+
+                if (
+                    boton.textContent ===
+                    pregunta.opciones[
+                        pregunta.correcta
+                    ]
+                ) {
+
+                    boton.classList.add(
+                        "quiz-correcto"
+                    );
+
+                }
+
+            }
+        );
+
+
+        document.getElementById(
+            "quizResultado"
+        ).innerHTML = `
+
+            <div class="quiz-error">
+                ❌ Incorrecto
+            </div>
+
+            <p>
+                ${pregunta.explicacion}
+            </p>
+
+        `;
+
+    }
 
 
     document.getElementById(
@@ -3540,13 +3660,18 @@ opcionesMezcladas.forEach(opcion => {
         );
 
 
-    botonPrincipal.disabled = false;
+    botonPrincipal.disabled =
+        false;
 
 
     botonPrincipal.onclick =
         siguientePreguntaQuiz;
 
-    }function siguientePreguntaQuiz() {
+}
+
+
+
+    function siguientePreguntaQuiz() {
 
     if (!quizRespondido) {
         return;
