@@ -3998,3 +3998,297 @@ body.modo-oscuro .mensaje-flotante-cerrar:hover {
     }
 
 }
+/* =========================================================
+   MODO OSCURO COMPLETO
+========================================================= */
+
+body.modo-oscuro {
+    background: #050b08 !important;
+    color: #ecfdf5 !important;
+}
+
+
+/* TODO EL FONDO DE LA PÁGINA */
+
+body.modo-oscuro,
+body.modo-oscuro main,
+body.modo-oscuro section,
+body.modo-oscuro header,
+body.modo-oscuro footer {
+    background-color: #050b08 !important;
+}
+
+
+/* CONTENEDORES Y BLOQUES */
+
+body.modo-oscuro .container,
+body.modo-oscuro .section,
+body.modo-oscuro .hero,
+body.modo-oscuro .search-section,
+body.modo-oscuro .tips-section,
+body.modo-oscuro .estadisticas-section,
+body.modo-oscuro .guardados-section,
+body.modo-oscuro .guia-section {
+    background-color: transparent !important;
+}
+
+
+/* TARJETAS */
+
+body.modo-oscuro .waste-card,
+body.modo-oscuro .category-card,
+body.modo-oscuro .estadistica-card,
+body.modo-oscuro .guardado-card,
+body.modo-oscuro .guia-card,
+body.modo-oscuro .quiz-card,
+body.modo-oscuro .result-card,
+body.modo-oscuro .clasificador-exito,
+body.modo-oscuro .clasificador-error,
+body.modo-oscuro .empty-search {
+    background: #0d1b14 !important;
+
+    color: #ecfdf5 !important;
+
+    border-color:
+        rgba(255,255,255,0.08) !important;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.30) !important;
+}
+
+
+/* TARJETAS VACÍAS */
+
+body.modo-oscuro .guardado-vacio {
+    background: #0d1b14 !important;
+
+    color: #ecfdf5 !important;
+
+    border-color:
+        rgba(34,197,94,0.20) !important;
+}
+
+
+/* TEXTOS */
+
+body.modo-oscuro h1,
+body.modo-oscuro h2,
+body.modo-oscuro h3,
+body.modo-oscuro h4,
+body.modo-oscuro h5,
+body.modo-oscuro h6,
+body.modo-oscuro p,
+body.modo-oscuro span,
+body.modo-oscuro label,
+body.modo-oscuro li,
+body.modo-oscuro strong {
+    color: #ecfdf5 !important;
+}
+
+
+/* TEXTOS SECUNDARIOS */
+
+body.modo-oscuro .section-label,
+body.modo-oscuro .waste-category,
+body.modo-oscuro .guardado-categoria,
+body.modo-oscuro .result-label,
+body.modo-oscuro .result-category {
+    color: #a7f3d0 !important;
+}
+
+
+/* BUSCADOR */
+
+body.modo-oscuro input,
+body.modo-oscuro textarea,
+body.modo-oscuro select {
+    background: #0d1b14 !important;
+
+    color: #ecfdf5 !important;
+
+    border-color:
+        rgba(255,255,255,0.12) !important;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.20) !important;
+}
+
+
+body.modo-oscuro input::placeholder,
+body.modo-oscuro textarea::placeholder {
+    color: #86a695 !important;
+}
+
+
+/* BOTONES GENERALES */
+
+body.modo-oscuro button:not(.theme-toggle) {
+    color: #ecfdf5;
+}
+
+
+/* BOTONES DEL BUSCADOR / CLASIFICADOR */
+
+body.modo-oscuro .search-button,
+body.modo-oscuro .classifier-button,
+body.modo-oscuro .clasificador-exito button {
+    background: #14532d !important;
+
+    color: white !important;
+}
+
+
+/* RESULTADOS DE BÚSQUEDA */
+
+body.modo-oscuro .result-card {
+    background: #0d1b14 !important;
+
+    color: #ecfdf5 !important;
+}
+
+
+/* BOTONES DEL QUIZ */
+
+body.modo-oscuro .quiz-opcion {
+    background: #10271c !important;
+
+    color: #ecfdf5 !important;
+
+    border-color:
+        rgba(255,255,255,0.10) !important;
+}
+
+
+body.modo-oscuro .quiz-opcion:hover:not(:disabled) {
+    background: #173a28 !important;
+}
+
+
+/* ICONOS DE TARJETAS */
+
+body.modo-oscuro .waste-card-icon,
+body.modo-oscuro .guardado-icono,
+body.modo-oscuro .quiz-icon,
+body.modo-oscuro .guia-icono {
+    background: #123022 !important;
+}
+
+
+/* MODAL */
+
+body.modo-oscuro #modalResiduo {
+    background:
+        rgba(0,0,0,0.78) !important;
+}
+
+
+body.modo-oscuro #modalResiduo .modal-content,
+body.modo-oscuro #modalResiduo .modal-box {
+    background: #0d1b14 !important;
+
+    color: #ecfdf5 !important;
+
+    border-color:
+        rgba(255,255,255,0.08) !important;
+}
+
+
+/* MODAL: TEXTOS */
+
+body.modo-oscuro #modalResiduo h1,
+body.modo-oscuro #modalResiduo h2,
+body.modo-oscuro #modalResiduo h3,
+body.modo-oscuro #modalResiduo p,
+body.modo-oscuro #modalResiduo span {
+    color: #ecfdf5 !important;
+}
+
+
+/* MIS GUARDADOS */
+
+body.modo-oscuro .guardado-ver {
+    background: #123d28 !important;
+
+    color: #bbf7d0 !important;
+}
+
+
+body.modo-oscuro .guardado-eliminar {
+    background: #3b1515 !important;
+
+    color: #fecaca !important;
+}
+
+
+/* ESTADÍSTICAS */
+
+body.modo-oscuro .estadistica-card strong {
+    color: #ecfdf5 !important;
+}
+
+
+body.modo-oscuro .estadistica-card span {
+    color: #a7f3d0 !important;
+}
+
+
+/* CONSEJOS */
+
+body.modo-oscuro .tip-card,
+body.modo-oscuro .tips-card,
+body.modo-oscuro .consejo-card {
+    background: #0d1b14 !important;
+
+    color: #ecfdf5 !important;
+}
+
+
+/* NAVEGACIÓN */
+
+body.modo-oscuro nav,
+body.modo-oscuro .navbar,
+body.modo-oscuro .header {
+    background: #07110c !important;
+}
+
+
+/* PIE DE PÁGINA */
+
+body.modo-oscuro footer {
+    background: #030806 !important;
+
+    color: #ecfdf5 !important;
+}
+
+
+/* LINKS */
+
+body.modo-oscuro a {
+    color: #a7f3d0;
+}
+
+
+/* MENSAJE FLOTANTE */
+
+body.modo-oscuro .mensaje-flotante {
+    background: #0d1b14 !important;
+
+    color: #ecfdf5 !important;
+
+    border-color:
+        rgba(255,255,255,0.10) !important;
+}
+
+
+/* TRANSICIÓN */
+
+body,
+body *,
+body::before,
+body::after {
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
