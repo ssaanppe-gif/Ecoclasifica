@@ -35,7 +35,62 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* =========================================================
+   CLASIFICADOR - MODO OSCURO
+========================================================= */
 
+/* Caja/sección completa que contiene el clasificador */
+body.modo-oscuro section:has(#entradaClasificador),
+body.modo-oscuro div:has(#entradaClasificador) {
+    background: #0a1510 !important;
+    color: #eafff1 !important;
+    border-color: rgba(255,255,255,0.08) !important;
+}
+
+/* Título y texto del clasificador */
+body.modo-oscuro section:has(#entradaClasificador) h2,
+body.modo-oscuro section:has(#entradaClasificador) h3,
+body.modo-oscuro section:has(#entradaClasificador) p {
+    color: #eafff1 !important;
+}
+
+/* El campo de texto */
+body.modo-oscuro #entradaClasificador {
+    background: #07130d !important;
+    color: #eafff1 !important;
+    border: 1px solid #294536 !important;
+}
+
+body.modo-oscuro #entradaClasificador::placeholder {
+    color: #8fb8a0 !important;
+}
+
+/* Botón Clasificar */
+body.modo-oscuro #entradaClasificador + button,
+body.modo-oscuro #entradaClasificador ~ button {
+    background: #14532d !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+}
+
+/* Resultado del clasificador */
+body.modo-oscuro #resultadoClasificador {
+    background: transparent !important;
+    color: #eafff1 !important;
+}
+
+/* Resultado encontrado */
+body.modo-oscuro #resultadoClasificador .clasificador-exito {
+    background: #10291b !important;
+    color: #eafff1 !important;
+    border-color: #29573b !important;
+}
+
+/* Resultado con error */
+body.modo-oscuro #resultadoClasificador .clasificador-error {
+    background: #291617 !important;
+    color: #fecaca !important;
+}
 html {
     scroll-behavior: smooth;
 }
