@@ -3504,3 +3504,497 @@ a {
     }
 
 }
+
+/* =========================================================
+   MIS GUARDADOS - MEJORA VISUAL
+========================================================= */
+
+.guardados-section {
+    padding: 100px 20px;
+}
+
+.guardados-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.guardado-card {
+    position: relative;
+
+    padding: 28px;
+
+    border-radius: 26px;
+
+    background: white;
+
+    border: 1px solid rgba(34, 197, 94, 0.10);
+
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.guardado-card:hover {
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(34, 197, 94, 0.25);
+
+    box-shadow:
+        0 20px 45px rgba(15, 23, 42, 0.11);
+}
+
+.guardado-icono {
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ecfdf5,
+            #d1fae5
+        );
+
+    font-size: 2.5rem;
+}
+
+.guardado-categoria {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    font-size: 0.78rem;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.05em;
+
+    opacity: 0.65;
+}
+
+.guardado-card h3 {
+    margin:
+        0 0 10px;
+}
+
+.guardado-card p {
+    margin: 0;
+
+    line-height: 1.6;
+
+    opacity: 0.78;
+}
+
+.guardado-acciones {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 22px;
+}
+
+.guardado-acciones button {
+    flex: 1;
+
+    padding: 12px 14px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+.guardado-acciones button:hover {
+    transform: translateY(-2px);
+
+    filter: brightness(0.98);
+}
+
+.guardado-ver {
+    background:
+        #ecfdf5;
+
+    color:
+        #166534;
+}
+
+.guardado-eliminar {
+    background:
+        #fee2e2;
+
+    color:
+        #991b1b;
+}
+
+.guardado-vacio {
+    grid-column: 1 / -1;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    border-radius: 26px;
+
+    background: white;
+
+    border:
+        1px dashed
+        rgba(34, 197, 94, 0.25);
+}
+
+.guardado-vacio-icono {
+    font-size: 4rem;
+
+    margin-bottom: 14px;
+}
+
+@media (max-width: 900px) {
+
+    .guardados-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .guardados-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guardado-acciones {
+        flex-direction: column;
+    }
+
+}/* =========================================================
+   BOTÓN MODO OSCURO
+========================================================= */
+
+.theme-toggle {
+    width: 44px;
+    height: 44px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: inherit;
+
+    font-size: 1.15rem;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.08) rotate(10deg);
+
+    background: rgba(255, 255, 255, 0.20);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   MODO OSCURO
+========================================================= */
+
+body.modo-oscuro {
+    background: #07130d;
+    color: #ecfdf5;
+}
+
+body.modo-oscuro section {
+    background: #07130d;
+}
+
+body.modo-oscuro .waste-card,
+body.modo-oscuro .quiz-card,
+body.modo-oscuro .estadistica-card,
+body.modo-oscuro .guardado-card,
+body.modo-oscuro .guia-card {
+    background: #102119;
+
+    border-color:
+        rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.30);
+}
+
+body.modo-oscuro .waste-card:hover,
+body.modo-oscuro .guardado-card:hover,
+body.modo-oscuro .guia-card:hover,
+body.modo-oscuro .estadistica-card:hover {
+    background: #15291f;
+}
+
+body.modo-oscuro input,
+body.modo-oscuro textarea,
+body.modo-oscuro select {
+    background: #102119;
+    color: #ecfdf5;
+
+    border-color:
+        rgba(255, 255, 255, 0.10);
+}
+
+body.modo-oscuro .quiz-opcion {
+    background: #12241b;
+    color: #ecfdf5;
+
+    border-color:
+        rgba(255, 255, 255, 0.10);
+}
+
+body.modo-oscuro .quiz-opcion:hover:not(:disabled) {
+    background: #193225;
+}
+
+body.modo-oscuro .guardado-vacio {
+    background: #102119;
+}
+
+body.modo-oscuro .modal-content,
+body.modo-oscuro .modal-box {
+    background: #102119;
+    color: #ecfdf5;
+}
+
+
+/* =========================================================
+   TRANSICIÓN DEL TEMA
+========================================================= */
+
+body,
+body section,
+body .waste-card,
+body .quiz-card,
+body .estadistica-card,
+body .guardado-card,
+body .guia-card,
+body input,
+body textarea,
+body select {
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}/* =========================================================
+   MENSAJES FLOTANTES
+========================================================= */
+
+.mensaje-flotante {
+    position: fixed;
+
+    right: 24px;
+    bottom: 24px;
+
+    z-index: 9999;
+
+    width: min(380px, calc(100vw - 32px));
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px 18px;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border: 1px solid rgba(34, 197, 94, 0.15);
+
+    box-shadow:
+        0 20px 45px rgba(15, 23, 42, 0.16);
+
+    backdrop-filter: blur(12px);
+
+    opacity: 0;
+
+    transform:
+        translateY(25px)
+        scale(0.96);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+.mensaje-flotante.mensaje-visible {
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+    pointer-events: auto;
+}
+
+
+.mensaje-flotante-icono {
+    width: 46px;
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        #ecfdf5;
+
+    font-size: 1.35rem;
+}
+
+
+.mensaje-flotante-contenido {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.mensaje-flotante-contenido strong {
+    font-size: 0.95rem;
+}
+
+
+.mensaje-flotante-contenido span {
+    font-size: 0.84rem;
+
+    line-height: 1.4;
+
+    opacity: 0.72;
+}
+
+
+.mensaje-flotante-cerrar {
+    margin-left: auto;
+
+    width: 30px;
+    height: 30px;
+
+    flex-shrink: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        transparent;
+
+    font-size: 1.3rem;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    opacity: 0.55;
+
+    transition:
+        background 0.2s ease,
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.mensaje-flotante-cerrar:hover {
+    background:
+        rgba(15, 23, 42, 0.06);
+
+    opacity: 1;
+
+    transform:
+        scale(1.08);
+}
+
+
+/* =========================================================
+   MODO OSCURO
+========================================================= */
+
+body.modo-oscuro .mensaje-flotante {
+    background:
+        rgba(16, 33, 25, 0.97);
+
+    border-color:
+        rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.38);
+}
+
+
+body.modo-oscuro .mensaje-flotante-icono {
+    background:
+        #193225;
+}
+
+
+body.modo-oscuro .mensaje-flotante-cerrar:hover {
+    background:
+        rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .mensaje-flotante {
+        right: 16px;
+        bottom: 16px;
+    }
+
+}
