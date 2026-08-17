@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoClasifica | Aprende a reciclar</title>
+
+    <meta
+        name="description"
+        content="EcoClasifica te ayuda a identificar y clasificar correctamente diferentes tipos de residuos."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         BARRA DE NAVEGACIÓN
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">♻️</span>
+            <span class="logo-text">Eco<span>Clasifica</span></span>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#categorias">Categorías</a>
+            <a href="#residuos">Residuos</a>
+            <a href="#consejos">Consejos</a>
+        </nav>
+
+        <button class="nav-button" onclick="irAlBuscador()">
+            Buscar residuo
+        </button>
+
+    </header>
+
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+    ========================================== -->
+
+    <main>
+
+        <!-- =====================================
+             SECCIÓN INICIO / HERO
+        ====================================== -->
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    🌱 Cuidemos nuestro planeta
+                </div>
+
+                <h1>
+                    Descubre dónde va
+                    <span>cada residuo.</span>
+                </h1>
+
+                <p class="hero-description">
+                    EcoClasifica te ayuda a identificar tus residuos,
+                    conocer su categoría y aprender la forma correcta
+                    de desecharlos.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="primary-button"
+                        onclick="irAlBuscador()"
+                    >
+                        🔎 Buscar un residuo
+                    </button>
+
+                    <button
+                        class="secondary-button"
+                        onclick="irACategorias()"
+                    >
+                        ♻️ Ver categorías
+                    </button>
+
+                </div>
+
+                <div class="hero-statistics">
+
+                    <div class="stat">
+                        <strong id="cantidadResiduos">
+                            0
+                        </strong>
+                        <span>Residuos</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>8</strong>
+                        <span>Categorías</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>100%</strong>
+                        <span>Educativo</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-illustration">
+
+                <div class="planet-card">
+
+                    <div class="planet">
+                        🌎
+                    </div>
+
+                    <div class="floating-icon icon-one">
+                        🍃
+                    </div>
+
+                    <div class="floating-icon icon-two">
+                        ♻️
+                    </div>
+
+                    <div class="floating-icon icon-three">
+                        🌱
+                    </div>
+
+                    <div class="floating-icon icon-four">
+                        💧
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             BUSCADOR
+        ========================================== -->
+
+        <section id="buscador" class="search-section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    🔎 IDENTIFICA TU RESIDUO
+                </span>
+
+                <h2>
+                    ¿Qué residuo quieres clasificar?
+                </h2>
+
+                <p>
+                    Escribe el nombre de un residuo y EcoClasifica
+                    te mostrará cómo puedes desecharlo correctamente.
+                </p>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <span class="search-icon">
+                    🔍
+                </span>
+
+                <input
+                    type="text"
+                    id="buscadorResiduo"
+                    placeholder="Ejemplo: botella de plástico..."
+                    autocomplete="off"
+                >
+
+                <button
+                    class="search-button"
+                    onclick="buscarResiduo()"
+                >
+                    Buscar
+                </button>
+
+            </div>
+
+
+            <div
+                id="resultadoBusqueda"
+                class="search-result"
+            >
+
+                <div class="empty-search">
+
+                    <div class="empty-icon">
+                        🌱
+                    </div>
+
+                    <h3>
+                        Busca un residuo
+                    </h3>
+
+                    <p>
+                        Aquí aparecerá la información sobre
+                        el residuo que quieras consultar.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CATEGORÍAS
+        ========================================== -->
+
+        <section
+            id="categorias"
+            class="categories-section"
+        >
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    ♻️ EXPLORA
+                </span>
+
+                <h2>
+                    Categorías de residuos
+                </h2>
+
+                <p>
+                    Conoce los diferentes tipos de residuos
+                    y aprende cómo manejarlos correctamente.
+                </p>
+
+            </div>
+
+
+            <div class="categories-grid">
+
+                <!-- PAPEL -->
+
+                <button
+                    class="category-card paper"
+                    onclick="filtrarCategoria('papel')"
+                >
+
+                    <div class="category-icon">
+                        📄
+                    </div>
+
+                    <div class="category-info">
+
+                        <h3>
+                            Papel y cartón
+                        </h3>
+
+                        <p>
+                            Hojas, periódicos,
+                            cajas y cartones.
+                        </p>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- PLÁSTICO -->
+
+                <button
+                    class="category-card plastic"
+                    onclick="filtrarCategoria('plastico')"
+                >
+
+                    <div class="category-icon">
+                        🧴
+                    </div>
+
+                    <div class="category-info">
+
+                        <h3>
+                            Plásticos
+                        </h3>
+
+                        <p>
+                            Botellas, envases,
+                            bolsas y recipientes.
+                        </p>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- VIDRIO -->
+
+                <button
+                    class="category-card glass"
+                    onclick="filtrarCategoria('vidrio')"
+                >
+
+                    <div class="category-icon">
+                        🍾
+                    </div>
+
+                    <div class="category-info">
+
+                        <h3>
+                            Vidrio
+                        </h3>
+
+                        <p>
+                            Botellas, frascos
+                            y envases de vidrio.
+                        </p>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- METALES -->
+
+                <button
+                    class="category-card metal"
+                    onclick="filtrarCategoria('metal')"
+                >
+
+                    <div class="category-icon">
+                        🥫
+                    </div>
+
+                    <div class="category-info">
+
+                        <h3>
+                            Metales
+                        </h3>
+
+                        <p>
+                            Latas, aluminio
+                            y otros metales.
+                        </p>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- ORGÁNICOS -->
+
+                <button
+                    class="category-card organic"
+                    onclick="filtrarCategoria('organico')"
+                >
+
+                    <div class="category-icon">
+                        🍎
+                    </div>
+
+                    <div class="category-info">
+
+                        <h3>
+                            Orgánicos
+                        </h3>
+
+                        <p>
+                            Restos de comida
+                            y residuos naturales.
+                        </p>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- ELECTRÓNICOS -->
+
+                <button
+                    class="category-card electronic"
+                    onclick="filtrarCategoria('electronico')"
+                >
+
+                    <div class="category-icon">
+                        📱
+                    </div>
+
+                    <div class="category-info">
+
+                        <h3>
+                            Electrónicos
+                        </h3>
+
+                        <p>
+                            Celulares, cables,
+                            computadoras y más.
+                        </p>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- PELIGROSOS -->
+
+                <button
+                    class="category-card dangerous"
+                    onclick="filtrarCategoria('peligroso')"
+                >
+
+                    <div class="category-icon">
+                        ⚠️
+                    </div>
+
+                    <div class="category-info">
+
+                        <h3>
+                            Peligrosos
+                        </h3>
+
+                        <p>
+                            Pilas, baterías,
+                            químicos y otros.
+                        </p>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- OTROS -->
+
+                <button
+                    class="category-card other"
+                    onclick="filtrarCategoria('otros')"
+                >
+
+                    <div class="category-icon">
+                        🗑️
+                    </div>
+
+                    <div class="category-info">
+
+                        <h3>
+                            Otros residuos
+                        </h3>
+
+                        <p>
+                            Residuos que no
+                            pertenecen a las anteriores.
+                        </p>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             LISTADO DE RESIDUOS
+        ========================================== -->
+
+        <section
+            id="residuos"
+            class="waste-section"
+        >
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    📚 BASE DE DATOS
+                </span>
+
+                <h2>
+                    Residuos frecuentes
+                </h2>
+
+                <p>
+                    Explora algunos de los residuos más comunes
+                    que encontramos diariamente.
+                </p>
+
+            </div>
+
+
+            <div
+                id="listaResiduos"
+                class="waste-grid"
+            >
+
+                <!--
+                    Los residuos se generarán
+                    automáticamente mediante JavaScript.
+                -->
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CONSEJOS
+        ========================================== -->
+
+        <section
+            id="consejos"
+            class="tips-section"
+        >
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    🌱 APRENDE
+                </span>
+
+                <h2>
+                    Consejos para reciclar mejor
+                </h2>
+
+                <p>
+                    Pequeñas acciones pueden generar
+                    grandes cambios.
+                </p>
+
+            </div>
+
+
+            <div class="tips-grid">
+
+                <article class="tip-card">
+
+                    <div class="tip-number">
+                        01
+                    </div>
+
+                    <div class="tip-icon">
+                        🧼
+                    </div>
+
+                    <h3>
+                        Limpia los envases
+                    </h3>
+
+                    <p>
+                        Antes de reciclar un envase,
+                        elimina los restos de comida
+                        o líquidos cuando sea posible.
+                    </p>
+
+                </article>
+
+
+                <article class="tip-card">
+
+                    <div class="tip-number">
+                        02
+                    </div>
+
+                    <div class="tip-icon">
+                        📦
+                    </div>
+
+                    <h3>
+                        Separa correctamente
+                    </h3>
+
+                    <p>
+                        Evita mezclar residuos de diferentes
+                        categorías y revisa dónde corresponde
+                        cada material.
+                    </p>
+
+                </article>
+
+
+                <article class="tip-card">
+
+                    <div class="tip-number">
+                        03
+                    </div>
+
+                    <div class="tip-icon">
+                        🔋
+                    </div>
+
+                    <h3>
+                        Cuida los residuos peligrosos
+                    </h3>
+
+                    <p>
+                        Pilas, baterías y otros materiales
+                        especiales necesitan puntos de
+                        recolección adecuados.
+                    </p>
+
+                </article>
+
+
+                <article class="tip-card">
+
+                    <div class="tip-number">
+                        04
+                    </div>
+
+                    <div class="tip-icon">
+                        🌎
+                    </div>
+
+                    <h3>
+                        Reduce antes de reciclar
+                    </h3>
+
+                    <p>
+                        La mejor forma de reducir residuos
+                        es consumir de manera responsable
+                        y reutilizar siempre que puedas.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             LLAMADO FINAL
+        ========================================== -->
+
+        <section class="final-section">
+
+            <div class="final-content">
+
+                <div class="final-icon">
+                    🌎
+                </div>
+
+                <h2>
+                    Cada residuo cuenta.
+                </h2>
+
+                <p>
+                    Aprende, clasifica y ayuda a construir
+                    un planeta más limpio.
+                </p>
+
+                <button
+                    class="primary-button"
+                    onclick="irAlBuscador()"
+                >
+                    🔎 Clasificar un residuo
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         PIE DE PÁGINA
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    <span class="logo-icon">♻️</span>
+                    <span class="logo-text">
+                        Eco<span>Clasifica</span>
+                    </span>
+                </div>
+
+                <p>
+                    Una herramienta educativa para aprender
+                    a clasificar nuestros residuos.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Navegación
+                </h3>
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#categorias">
+                    Categorías
+                </a>
+
+                <a href="#residuos">
+                    Residuos
+                </a>
+
+                <a href="#consejos">
+                    Consejos
+                </a>
+
+            </div>
+
+
+            <div class="footer-info">
+
+                <h3>
+                    Proyecto
+                </h3>
+
+                <p>
+                    Feria de Ciencias
+                </p>
+
+                <p>
+                    EcoClasifica © 2026
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                🌱 Hecho para aprender y cuidar nuestro planeta.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+<!-- =========================================
+     VENTANA DE INFORMACIÓN DEL RESIDUO
+========================================= -->
+
+<div
+    id="modalResiduo"
+    class="modal-residuo"
+>
+
+    <div class="modal-contenido">
+
+        <button
+            class="modal-cerrar"
+            onclick="cerrarModal()"
+            aria-label="Cerrar"
+        >
+            ×
+        </button>
+
+
+        <div
+            id="modalIcono"
+            class="modal-icono"
+        >
+            ♻️
+        </div>
+
+
+        <div class="modal-categoria">
+            INFORMACIÓN DEL RESIDUO
+        </div>
+
+
+        <h2 id="modalTitulo">
+            Residuo
+        </h2>
+
+
+        <div
+            id="modalCategoria"
+            class="modal-etiqueta"
+        >
+            Categoría
+        </div>
+
+
+        <p
+            id="modalDescripcion"
+            class="modal-descripcion"
+        >
+            Información del residuo.
+        </p>
+
+
+        <div class="modal-datos">
+
+            <div class="modal-dato">
+
+                <span>
+                    🧱
+                </span>
+
+                <div>
+
+                    <small>
+                        Material
+                    </small>
+
+                    <strong id="modalMaterial">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-dato">
+
+                <span>
+                    ♻️
+                </span>
+
+                <div>
+
+                    <small>
+                        Tipo
+                    </small>
+
+                    <strong id="modalTipo">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="modal-instrucciones">
+
+            <h3>
+                📋 ¿Cómo debo desecharlo?
+            </h3>
+
+            <p id="modalInstrucciones">
+                -
+            </p>
+
+        </div>
+
+
+        <div class="modal-consejo">
+
+            <h3>
+                💡 Consejo ecológico
+            </h3>
+
+            <p id="modalConsejo">
+                -
+            </p>
+
+        </div>
+
+
+        <button
+            class="modal-boton"
+            onclick="cerrarModal()"
+        >
+            Entendido 🌱
+        </button>
+
+    </div>
+
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
