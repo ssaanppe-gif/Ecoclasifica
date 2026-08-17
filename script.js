@@ -942,9 +942,791 @@ const residuos = [
             "pantalón",
             "textil"
         ]
-    }
+    },
 
+{
+    id: 45,
+    nombre: "Papel de regalo",
+    nombreCorto: "Papel de regalo",
+    categoria: "papel",
+    icono: "🎁",
+    tipo: "Reciclable",
+    material: "Papel",
+    descripcion: "El papel de regalo limpio puede reutilizarse o recuperarse dependiendo de su composición.",
+    instrucciones: "Retira cintas, adornos y materiales que no sean papel antes de separarlo.",
+    consejo: "Guárdalo para reutilizarlo en otra ocasión.",
+    palabrasClave: ["papel regalo", "papel de regalo", "regalo", "papel"]
+},
 
+{
+    id: 46,
+    nombre: "Sobre de papel",
+    nombreCorto: "Sobre",
+    categoria: "papel",
+    icono: "✉️",
+    tipo: "Reciclable",
+    material: "Papel",
+    descripcion: "Los sobres de papel limpios pueden recuperarse como papel.",
+    instrucciones: "Retira elementos que no sean de papel cuando sea necesario.",
+    consejo: "Puedes reutilizar los sobres para guardar documentos.",
+    palabrasClave: ["sobre", "sobre papel", "carta", "papel"]
+},
+
+{
+    id: 47,
+    nombre: "Caja de zapatos",
+    nombreCorto: "Caja de zapatos",
+    categoria: "papel",
+    icono: "👟",
+    tipo: "Reciclable",
+    material: "Cartón",
+    descripcion: "Las cajas de zapatos están fabricadas principalmente de cartón.",
+    instrucciones: "Aplasta la caja y mantenla limpia y seca.",
+    consejo: "Reutilízala para guardar objetos antes de reciclarla.",
+    palabrasClave: ["caja zapatos", "caja de zapatos", "carton", "cartón"]
+},
+
+{
+    id: 48,
+    nombre: "Cartón corrugado",
+    nombreCorto: "Cartón corrugado",
+    categoria: "papel",
+    icono: "📦",
+    tipo: "Reciclable",
+    material: "Cartón",
+    descripcion: "El cartón corrugado se utiliza principalmente en cajas y embalajes.",
+    instrucciones: "Aplástalo y retira restos de comida, plástico o cinta innecesaria.",
+    consejo: "Puede reutilizarse para proyectos escolares.",
+    palabrasClave: ["carton corrugado", "cartón corrugado", "embalaje", "caja"]
+},
+
+{
+    id: 49,
+    nombre: "Revista",
+    nombreCorto: "Revista",
+    categoria: "papel",
+    icono: "📖",
+    tipo: "Reciclable",
+    material: "Papel",
+    descripcion: "Las revistas limpias y secas pueden recuperarse como papel.",
+    instrucciones: "Sepáralas de restos de comida y líquidos.",
+    consejo: "Puedes reutilizarlas para manualidades.",
+    palabrasClave: ["revista", "revistas", "magazine", "papel"]
+},
+
+{
+    id: 50,
+    nombre: "Bolsa de papel",
+    nombreCorto: "Bolsa de papel",
+    categoria: "papel",
+    icono: "🛍️",
+    tipo: "Reciclable",
+    material: "Papel",
+    descripcion: "Las bolsas de papel pueden reutilizarse y, cuando están limpias, recuperarse.",
+    instrucciones: "Mantenla seca y retira elementos que no sean papel.",
+    consejo: "Reutilízala varias veces antes de reciclarla.",
+    palabrasClave: ["bolsa papel", "bolsa de papel", "papel"]
+},
+
+{
+    id: 51,
+    nombre: "Envase de yogur",
+    nombreCorto: "Yogur",
+    categoria: "plastico",
+    icono: "🥛",
+    tipo: "Plástico",
+    material: "Plástico",
+    descripcion: "Los envases de yogur suelen estar hechos de plástico.",
+    instrucciones: "Vacía el contenido y limpia el envase cuando sea necesario.",
+    consejo: "Reduce el uso de envases descartables cuando puedas.",
+    palabrasClave: ["yogur", "yogurt", "envase yogur", "vasito"]
+},
+
+{
+    id: 52,
+    nombre: "Botella de detergente",
+    nombreCorto: "Detergente",
+    categoria: "plastico",
+    icono: "🧴",
+    tipo: "Plástico",
+    material: "Plástico",
+    descripcion: "Los envases de productos de limpieza suelen ser de plástico.",
+    instrucciones: "Vacía completamente el recipiente antes de separarlo.",
+    consejo: "No mezcles restos de productos químicos diferentes.",
+    palabrasClave: ["detergente", "envase detergente", "limpieza", "plastico"]
+},
+
+{
+    id: 53,
+    nombre: "Envase de champú",
+    nombreCorto: "Champú",
+    categoria: "plastico",
+    icono: "🧴",
+    tipo: "Plástico",
+    material: "Plástico",
+    descripcion: "Los envases de champú suelen ser de plástico.",
+    instrucciones: "Vacía el recipiente y separa el envase según las normas locales.",
+    consejo: "Aprovecha todo el producto antes de desechar el envase.",
+    palabrasClave: ["champu", "champú", "shampoo", "envase champu"]
+},
+
+{
+    id: 54,
+    nombre: "Envase de margarina",
+    nombreCorto: "Margarina",
+    categoria: "plastico",
+    icono: "🧈",
+    tipo: "Plástico",
+    material: "Plástico",
+    descripcion: "Los recipientes de margarina suelen fabricarse con plástico.",
+    instrucciones: "Retira los restos de comida y limpia el recipiente cuando sea necesario.",
+    consejo: "Puedes reutilizarlo para almacenar objetos pequeños.",
+    palabrasClave: ["margarina", "envase margarina", "recipiente", "plastico"]
+},
+
+{
+    id: 55,
+    nombre: "Envase de mayonesa",
+    nombreCorto: "Mayonesa",
+    categoria: "plastico",
+    icono: "🥫",
+    tipo: "Plástico",
+    material: "Plástico",
+    descripcion: "Los envases de mayonesa pueden ser de plástico y deben vaciarse antes de separarlos.",
+    instrucciones: "Retira la mayor cantidad posible de restos de alimento.",
+    consejo: "Evita desperdiciar el producto que todavía puedas utilizar.",
+    palabrasClave: ["mayonesa", "envase mayonesa", "salsa", "plastico"]
+},
+
+{
+    id: 56,
+    nombre: "Envase de helado",
+    nombreCorto: "Helado",
+    categoria: "plastico",
+    icono: "🍦",
+    tipo: "Plástico",
+    material: "Plástico",
+    descripcion: "Los recipientes de helado pueden reutilizarse o gestionarse según su material.",
+    instrucciones: "Vacía y limpia el recipiente antes de separarlo.",
+    consejo: "Reutiliza el envase para guardar pequeños objetos.",
+    palabrasClave: ["helado", "envase helado", "tarro helado", "plastico"]
+},
+
+{
+    id: 57,
+    nombre: "Botella de agua",
+    nombreCorto: "Botella de agua",
+    categoria: "plastico",
+    icono: "💧",
+    tipo: "Reciclable",
+    material: "PET",
+    descripcion: "Las botellas de agua de PET pueden recuperarse mediante sistemas de reciclaje.",
+    instrucciones: "Vacía la botella y sepárala correctamente.",
+    consejo: "Utiliza una botella reutilizable para reducir residuos.",
+    palabrasClave: ["agua", "botella agua", "botella de agua", "pet"]
+},
+
+{
+    id: 58,
+    nombre: "Tapa de botella",
+    nombreCorto: "Tapa plástica",
+    categoria: "plastico",
+    icono: "🔵",
+    tipo: "Plástico",
+    material: "Plástico",
+    descripcion: "Las tapas de botellas suelen estar fabricadas de plástico.",
+    instrucciones: "Sepárala o mantenla con la botella según las reglas locales.",
+    consejo: "Puedes reutilizar tapas para proyectos escolares.",
+    palabrasClave: ["tapa", "tapa botella", "tapa plastica", "tapa plástica"]
+},
+
+{
+    id: 59,
+    nombre: "Envase de crema",
+    nombreCorto: "Crema cosmética",
+    categoria: "plastico",
+    icono: "🧴",
+    tipo: "Plástico",
+    material: "Plástico",
+    descripcion: "Muchos envases de productos cosméticos están hechos de plástico.",
+    instrucciones: "Vacía el contenido y separa el recipiente según su material.",
+    consejo: "Evita comprar productos con envases innecesarios.",
+    palabrasClave: ["crema", "cosmetico", "cosmético", "envase crema"]
+},
+
+{
+    id: 60,
+    nombre: "Envase de comida para llevar",
+    nombreCorto: "Envase para llevar",
+    categoria: "plastico",
+    icono: "🥡",
+    tipo: "Residuo mixto",
+    material: "Plástico u otros materiales",
+    descripcion: "Los envases para comida pueden fabricarse con distintos materiales.",
+    instrucciones: "Identifica el material y elimina los restos de comida.",
+    consejo: "Usa recipientes reutilizables para reducir descartables.",
+    palabrasClave: ["comida llevar", "delivery", "envase comida", "envase delivery"]
+},
+
+{
+    id: 61,
+    nombre: "Espejo",
+    nombreCorto: "Espejo",
+    categoria: "vidrio",
+    icono: "🪞",
+    tipo: "Residuo especial",
+    material: "Vidrio tratado",
+    descripcion: "Los espejos contienen vidrio tratado y pueden gestionarse de forma distinta al vidrio de envases.",
+    instrucciones: "Manipúlalo con cuidado y consulta las reglas locales.",
+    consejo: "Reutiliza el espejo si todavía está en buen estado.",
+    palabrasClave: ["espejo", "vidrio espejo", "cristal"]
+},
+
+{
+    id: 62,
+    nombre: "Frasco de especias",
+    nombreCorto: "Frasco de especias",
+    categoria: "vidrio",
+    icono: "🧂",
+    tipo: "Reciclable",
+    material: "Vidrio",
+    descripcion: "Los frascos de especias pueden reutilizarse o reciclarse cuando están vacíos.",
+    instrucciones: "Vacía y limpia el frasco antes de separarlo.",
+    consejo: "Puedes volver a utilizarlo para guardar otras especias.",
+    palabrasClave: ["especias", "frasco especias", "frasco vidrio", "vidrio"]
+},
+
+{
+    id: 63,
+    nombre: "Frasco de miel",
+    nombreCorto: "Frasco de miel",
+    categoria: "vidrio",
+    icono: "🍯",
+    tipo: "Reciclable",
+    material: "Vidrio",
+    descripcion: "Los frascos de miel suelen ser de vidrio y pueden reutilizarse.",
+    instrucciones: "Vacía y limpia el frasco antes de separarlo.",
+    consejo: "Puedes utilizarlo nuevamente como recipiente.",
+    palabrasClave: ["miel", "frasco miel", "tarro", "vidrio"]
+},
+
+{
+    id: 64,
+    nombre: "Copa de vidrio",
+    nombreCorto: "Copa",
+    categoria: "vidrio",
+    icono: "🥂",
+    tipo: "Vidrio",
+    material: "Vidrio",
+    descripcion: "Las copas están hechas de vidrio, aunque su gestión puede depender del sistema local.",
+    instrucciones: "Manipúlala con cuidado y revisa las reglas locales.",
+    consejo: "Reutilízala mientras esté en buen estado.",
+    palabrasClave: ["copa", "copa vidrio", "vaso vidrio"]
+},
+
+{
+    id: 65,
+    nombre: "Alambre metálico",
+    nombreCorto: "Alambre",
+    categoria: "metal",
+    icono: "🧵",
+    tipo: "Metal",
+    material: "Metal",
+    descripcion: "El alambre puede recuperarse como metal cuando el sistema local acepta este material.",
+    instrucciones: "Manipúlalo con cuidado para evitar cortes.",
+    consejo: "Reutilízalo para reparaciones o proyectos.",
+    palabrasClave: ["alambre", "metal", "alambre metalico", "alambre metálico"]
+},
+
+{
+    id: 66,
+    nombre: "Tornillos usados",
+    nombreCorto: "Tornillos",
+    categoria: "metal",
+    icono: "🔩",
+    tipo: "Metal",
+    material: "Acero",
+    descripcion: "Los tornillos están fabricados principalmente de metal y pueden recuperarse.",
+    instrucciones: "Sepáralos de materiales que no sean metálicos.",
+    consejo: "Guarda los tornillos que todavía puedan reutilizarse.",
+    palabrasClave: ["tornillo", "tornillos", "acero", "metal"]
+},
+
+{
+    id: 67,
+    nombre: "Llave metálica",
+    nombreCorto: "Llave",
+    categoria: "metal",
+    icono: "🔑",
+    tipo: "Metal",
+    material: "Metal",
+    descripcion: "Las llaves metálicas pueden recuperarse como metal.",
+    instrucciones: "Sepáralas de otros materiales cuando sea necesario.",
+    consejo: "Reutiliza las llaves que todavía puedan servir.",
+    palabrasClave: ["llave", "llave metal", "metal"]
+},
+
+{
+    id: 68,
+    nombre: "Cubiertos metálicos viejos",
+    nombreCorto: "Cubiertos",
+    categoria: "metal",
+    icono: "🍴",
+    tipo: "Metal",
+    material: "Acero inoxidable",
+    descripcion: "Los cubiertos metálicos pueden reutilizarse o recuperarse como metal.",
+    instrucciones: "Verifica las opciones locales de recuperación de metales.",
+    consejo: "Dónalos o reutilízalos si están en buen estado.",
+    palabrasClave: ["cubiertos", "tenedor", "cuchara", "metal"]
+},
+
+{
+    id: 69,
+    nombre: "Lata de café",
+    nombreCorto: "Lata de café",
+    categoria: "metal",
+    icono: "☕",
+    tipo: "Metal",
+    material: "Metal",
+    descripcion: "Las latas metálicas de café pueden reutilizarse o recuperarse.",
+    instrucciones: "Vacía y limpia el recipiente antes de separarlo.",
+    consejo: "Reutiliza la lata para guardar pequeños objetos.",
+    palabrasClave: ["lata cafe", "lata café", "cafe lata", "metal"]
+},
+
+{
+    id: 70,
+    nombre: "Lata de leche evaporada",
+    nombreCorto: "Lata de leche",
+    categoria: "metal",
+    icono: "🥫",
+    tipo: "Reciclable",
+    material: "Metal",
+    descripcion: "Las latas metálicas de alimentos pueden recuperarse mediante reciclaje.",
+    instrucciones: "Vacía el contenido y limpia la lata cuando sea necesario.",
+    consejo: "Manipula con cuidado los bordes de la tapa.",
+    palabrasClave: ["leche evaporada", "lata leche", "lata", "metal"]
+},
+
+{
+    id: 71,
+    nombre: "Aluminio en bandeja",
+    nombreCorto: "Bandeja de aluminio",
+    categoria: "metal",
+    icono: "🍱",
+    tipo: "Metal",
+    material: "Aluminio",
+    descripcion: "Las bandejas de aluminio pueden recuperarse cuando están limpias y el sistema local las acepta.",
+    instrucciones: "Retira los restos de comida antes de separarla.",
+    consejo: "Evita desechar bandejas con grandes cantidades de comida.",
+    palabrasClave: ["bandeja aluminio", "aluminio", "bandeja", "metal"]
+},
+
+{
+    id: 72,
+    nombre: "Cáscara de naranja",
+    nombreCorto: "Cáscara de naranja",
+    categoria: "organico",
+    icono: "🍊",
+    tipo: "Orgánico",
+    material: "Materia orgánica",
+    descripcion: "Las cáscaras de frutas forman parte de los residuos orgánicos.",
+    instrucciones: "Sepárala de bolsas y otros envases.",
+    consejo: "Puede aprovecharse en compostaje cuando sea apropiado.",
+    palabrasClave: ["naranja", "cascara naranja", "cáscara naranja", "fruta"]
+},
+
+{
+    id: 73,
+    nombre: "Cáscara de papa",
+    nombreCorto: "Cáscara de papa",
+    categoria: "organico",
+    icono: "🥔",
+    tipo: "Orgánico",
+    material: "Materia vegetal",
+    descripcion: "La cáscara de papa es un residuo de origen vegetal.",
+    instrucciones: "Sepárala de envases y otros residuos.",
+    consejo: "Puede aprovecharse en compostaje adecuado.",
+    palabrasClave: ["papa", "cascara papa", "cáscara papa", "vegetal"]
+},
+
+{
+    id: 74,
+    nombre: "Cáscara de limón",
+    nombreCorto: "Cáscara de limón",
+    categoria: "organico",
+    icono: "🍋",
+    tipo: "Orgánico",
+    material: "Materia orgánica",
+    descripcion: "La cáscara de limón es un residuo orgánico.",
+    instrucciones: "Sepárala de envases y materiales no orgánicos.",
+    consejo: "Puedes incorporarla al compostaje cuando sea apropiado.",
+    palabrasClave: ["limon", "limón", "cascara limon", "cáscara limón"]
+},
+
+{
+    id: 75,
+    nombre: "Restos de arroz",
+    nombreCorto: "Arroz",
+    categoria: "organico",
+    icono: "🍚",
+    tipo: "Orgánico",
+    material: "Materia orgánica",
+    descripcion: "Los restos de arroz forman parte de los residuos orgánicos.",
+    instrucciones: "Sepáralos de platos, recipientes y otros materiales.",
+    consejo: "Planifica las porciones para reducir desperdicios.",
+    palabrasClave: ["arroz", "restos arroz", "comida", "organico"]
+},
+
+{
+    id: 76,
+    nombre: "Restos de pasta",
+    nombreCorto: "Pasta",
+    categoria: "organico",
+    icono: "🍝",
+    tipo: "Orgánico",
+    material: "Materia orgánica",
+    descripcion: "Los restos de pasta son residuos de origen orgánico.",
+    instrucciones: "Sepáralos de envases y cubiertos.",
+    consejo: "Aprovecha las porciones para evitar desperdicios.",
+    palabrasClave: ["pasta", "fideos", "restos pasta", "comida"]
+},
+
+{
+    id: 77,
+    nombre: "Semillas de frutas",
+    nombreCorto: "Semillas",
+    categoria: "organico",
+    icono: "🌱",
+    tipo: "Orgánico",
+    material: "Materia vegetal",
+    descripcion: "Las semillas de frutas forman parte de la materia orgánica.",
+    instrucciones: "Sepáralas de envases y materiales no orgánicos.",
+    consejo: "Algunas semillas pueden utilizarse para cultivar plantas.",
+    palabrasClave: ["semillas", "semilla", "fruta", "organico"]
+},
+
+{
+    id: 78,
+    nombre: "Hojas de lechuga",
+    nombreCorto: "Lechuga",
+    categoria: "organico",
+    icono: "🥬",
+    tipo: "Orgánico",
+    material: "Materia vegetal",
+    descripcion: "Los restos de vegetales pertenecen a la fracción orgánica.",
+    instrucciones: "Sepáralos de bolsas, envases y cubiertos.",
+    consejo: "Pueden aprovecharse para compostaje.",
+    palabrasClave: ["lechuga", "vegetal", "hojas", "organico"]
+},
+
+{
+    id: 79,
+    nombre: "Router antiguo",
+    nombreCorto: "Router",
+    categoria: "electronico",
+    icono: "📡",
+    tipo: "Residuo electrónico",
+    material: "Plástico, metal y componentes electrónicos",
+    descripcion: "Los routers contienen componentes electrónicos y deben gestionarse adecuadamente.",
+    instrucciones: "Entrégalo en un punto de recolección de residuos electrónicos.",
+    consejo: "Reutilízalo si todavía funciona.",
+    palabrasClave: ["router", "wifi", "router wifi", "electronico"]
+},
+
+{
+    id: 80,
+    nombre: "Control remoto",
+    nombreCorto: "Control remoto",
+    categoria: "electronico",
+    icono: "📺",
+    tipo: "Residuo electrónico",
+    material: "Plástico, metal y componentes electrónicos",
+    descripcion: "Los controles remotos contienen componentes electrónicos.",
+    instrucciones: "Retira las pilas cuando corresponda y llévalo a un sistema de recolección electrónica.",
+    consejo: "Reutiliza el dispositivo mientras funcione.",
+    palabrasClave: ["control remoto", "mando", "control tv", "electronico"]
+},
+
+{
+    id: 81,
+    nombre: "Cámara digital antigua",
+    nombreCorto: "Cámara",
+    categoria: "electronico",
+    icono: "📷",
+    tipo: "Residuo electrónico",
+    material: "Plástico, metal y componentes electrónicos",
+    descripcion: "Las cámaras digitales contienen componentes electrónicos que requieren gestión especializada.",
+    instrucciones: "Llévala a un punto de recolección de residuos electrónicos.",
+    consejo: "Borra tus datos antes de entregarla.",
+    palabrasClave: ["camara", "cámara", "camara digital", "fotografia"]
+},
+
+{
+    id: 82,
+    nombre: "Extensión eléctrica",
+    nombreCorto: "Extensión",
+    categoria: "electronico",
+    icono: "🔌",
+    tipo: "Residuo electrónico",
+    material: "Plástico, cobre y componentes eléctricos",
+    descripcion: "Las extensiones eléctricas contienen cables y componentes que pueden gestionarse como residuos electrónicos.",
+    instrucciones: "No la mezcles automáticamente con los residuos comunes.",
+    consejo: "Revisa si puede repararse antes de desecharla.",
+    palabrasClave: ["extension", "extensión", "cable extension", "electrico"]
+},
+
+{
+    id: 83,
+    nombre: "Impresora antigua",
+    nombreCorto: "Impresora",
+    categoria: "electronico",
+    icono: "🖨️",
+    tipo: "Residuo electrónico",
+    material: "Plástico, metal y componentes electrónicos",
+    descripcion: "Las impresoras contienen diferentes materiales y deben gestionarse como aparatos electrónicos.",
+    instrucciones: "Llévala a un punto de recolección de residuos electrónicos.",
+    consejo: "Repara o dona la impresora si todavía funciona.",
+    palabrasClave: ["impresora", "printer", "electronico"]
+},
+
+{
+    id: 84,
+    nombre: "Monitor antiguo",
+    nombreCorto: "Monitor",
+    categoria: "electronico",
+    icono: "🖥️",
+    tipo: "Residuo electrónico",
+    material: "Vidrio, plástico y componentes electrónicos",
+    descripcion: "Los monitores deben gestionarse como residuos electrónicos.",
+    instrucciones: "Llévalo a un punto de recolección adecuado.",
+    consejo: "Reutiliza o dona el monitor si todavía funciona.",
+    palabrasClave: ["monitor", "pantalla", "computadora", "electronico"]
+},
+
+{
+    id: 85,
+    nombre: "Adaptador de corriente",
+    nombreCorto: "Adaptador",
+    categoria: "electronico",
+    icono: "🔌",
+    tipo: "Residuo electrónico",
+    material: "Plástico, metal y componentes electrónicos",
+    descripcion: "Los adaptadores de corriente contienen componentes eléctricos y electrónicos.",
+    instrucciones: "Entrégalo en un punto de recolección de residuos electrónicos.",
+    consejo: "Guarda adaptadores compatibles que todavía funcionen.",
+    palabrasClave: ["adaptador", "cargador", "corriente", "electronico"]
+},
+
+{
+    id: 86,
+    nombre: "Batería de celular",
+    nombreCorto: "Batería de celular",
+    categoria: "peligroso",
+    icono: "🔋",
+    tipo: "Residuo especial",
+    material: "Batería de litio",
+    descripcion: "Las baterías de celulares requieren una gestión especializada.",
+    instrucciones: "No la perfores ni la arrojes a la basura común.",
+    consejo: "Mantén las baterías dañadas lejos del calor.",
+    palabrasClave: ["bateria celular", "batería celular", "litio", "bateria"]
+},
+
+{
+    id: 87,
+    nombre: "Pila AA",
+    nombreCorto: "Pila AA",
+    categoria: "peligroso",
+    icono: "🔋",
+    tipo: "Residuo especial",
+    material: "Metal y compuestos químicos",
+    descripcion: "Las pilas AA usadas requieren una disposición adecuada.",
+    instrucciones: "Guárdalas secas y llévalas a un punto de recolección.",
+    consejo: "Nunca las quemes ni las arrojes al agua.",
+    palabrasClave: ["pila aa", "pila", "bateria", "batería"]
+},
+
+{
+    id: 88,
+    nombre: "Pintura sobrante",
+    nombreCorto: "Pintura",
+    categoria: "peligroso",
+    icono: "🎨",
+    tipo: "Residuo especial",
+    material: "Pintura y químicos",
+    descripcion: "Los restos de pintura pueden contener sustancias que requieren una disposición responsable.",
+    instrucciones: "No viertas pintura en el desagüe y consulta un punto de recepción adecuado.",
+    consejo: "Compra solo la cantidad de pintura que realmente necesites.",
+    palabrasClave: ["pintura", "pintura sobrante", "quimico", "químico"]
+},
+
+{
+    id: 89,
+    nombre: "Medicamento vencido",
+    nombreCorto: "Medicamento",
+    categoria: "peligroso",
+    icono: "💊",
+    tipo: "Residuo especial",
+    material: "Sustancias farmacéuticas",
+    descripcion: "Los medicamentos vencidos requieren una gestión adecuada.",
+    instrucciones: "Entrégalos a programas o puntos de recolección disponibles.",
+    consejo: "No tires medicamentos por el inodoro.",
+    palabrasClave: ["medicamento", "medicina", "pastilla", "vencido"]
+},
+
+{
+    id: 90,
+    nombre: "Barniz sobrante",
+    nombreCorto: "Barniz",
+    categoria: "peligroso",
+    icono: "🪵",
+    tipo: "Residuo especial",
+    material: "Barniz y sustancias químicas",
+    descripcion: "Los restos de barniz pueden contener sustancias que necesitan un manejo especial.",
+    instrucciones: "No lo viertas en desagües. Consulta cómo entregarlo correctamente.",
+    consejo: "Compra solo la cantidad necesaria para evitar sobrantes.",
+    palabrasClave: ["barniz", "pintura", "quimico", "química"]
+},
+
+{
+    id: 91,
+    nombre: "Manguera vieja",
+    nombreCorto: "Manguera",
+    categoria: "otros",
+    icono: "🪴",
+    tipo: "Reutilizable",
+    material: "Plástico y caucho",
+    descripcion: "Una manguera puede repararse, reutilizarse o gestionarse según su material.",
+    instrucciones: "Comprueba primero si puede repararse o reutilizarse.",
+    consejo: "Dale un segundo uso antes de desecharla.",
+    palabrasClave: ["manguera", "caucho", "plastico"]
+},
+
+{
+    id: 92,
+    nombre: "Mochila vieja",
+    nombreCorto: "Mochila",
+    categoria: "otros",
+    icono: "🎒",
+    tipo: "Reutilizable",
+    material: "Tela, plástico y otros materiales",
+    descripcion: "Las mochilas pueden repararse, reutilizarse o donarse.",
+    instrucciones: "Comprueba si todavía puede utilizarse o repararse.",
+    consejo: "Dónala si está en buenas condiciones.",
+    palabrasClave: ["mochila", "bolso", "textil"]
+},
+
+{
+    id: 93,
+    nombre: "Juguete de plástico",
+    nombreCorto: "Juguete",
+    categoria: "otros",
+    icono: "🧸",
+    tipo: "Reutilizable",
+    material: "Plástico",
+    descripcion: "Los juguetes pueden repararse, reutilizarse o donarse antes de desecharse.",
+    instrucciones: "Comprueba si todavía puede utilizarse.",
+    consejo: "Donar juguetes prolonga su vida útil.",
+    palabrasClave: ["juguete", "muñeco", "juguete plastico", "plastico"]
+},
+
+{
+    id: 94,
+    nombre: "Pelota vieja",
+    nombreCorto: "Pelota",
+    categoria: "otros",
+    icono: "⚽",
+    tipo: "Reutilizable",
+    material: "Caucho o plástico",
+    descripcion: "Una pelota vieja puede reutilizarse o repararse antes de convertirse en residuo.",
+    instrucciones: "Comprueba si puede repararse o donarse.",
+    consejo: "Busca otros usos antes de desecharla.",
+    palabrasClave: ["pelota", "balon", "balón", "caucho"]
+},
+
+{
+    id: 95,
+    nombre: "Cinturón viejo",
+    nombreCorto: "Cinturón",
+    categoria: "otros",
+    icono: "👔",
+    tipo: "Textil",
+    material: "Cuero, tela o materiales sintéticos",
+    descripcion: "Los cinturones pueden reutilizarse o repararse dependiendo de su material.",
+    instrucciones: "Evalúa si puede reutilizarse o donarse.",
+    consejo: "Repara hebillas o partes dañadas cuando sea posible.",
+    palabrasClave: ["cinturon", "cinturón", "correa", "textil"]
+},
+
+{
+    id: 96,
+    nombre: "Cortina vieja",
+    nombreCorto: "Cortina",
+    categoria: "otros",
+    icono: "🪟",
+    tipo: "Textil",
+    material: "Tela",
+    descripcion: "Las cortinas viejas pueden reutilizarse como tela o donarse.",
+    instrucciones: "Sepáralas de accesorios y elementos diferentes.",
+    consejo: "Puedes convertirlas en bolsas o paños reutilizables.",
+    palabrasClave: ["cortina", "tela", "textil"]
+},
+
+{
+    id: 97,
+    nombre: "Toalla vieja",
+    nombreCorto: "Toalla",
+    categoria: "otros",
+    icono: "🧻",
+    tipo: "Textil",
+    material: "Algodón u otras fibras",
+    descripcion: "Las toallas pueden reutilizarse como paños de limpieza.",
+    instrucciones: "Reutilízala o busca opciones de recuperación textil.",
+    consejo: "Córtala en trozos para crear paños reutilizables.",
+    palabrasClave: ["toalla", "tela", "textil", "algodon"]
+},
+
+{
+    id: 98,
+    nombre: "Cinta adhesiva usada",
+    nombreCorto: "Cinta adhesiva",
+    categoria: "otros",
+    icono: "📏",
+    tipo: "Residuo mixto",
+    material: "Plástico y adhesivo",
+    descripcion: "La cinta adhesiva combina materiales y normalmente no se recupera como papel convencional.",
+    instrucciones: "Retírala de cajas y cartón cuando sea posible.",
+    consejo: "Utiliza solamente la cantidad necesaria.",
+    palabrasClave: ["cinta", "cinta adhesiva", "scotch", "adhesivo"]
+},
+
+{
+    id: 99,
+    nombre: "Esponja de cocina usada",
+    nombreCorto: "Esponja",
+    categoria: "otros",
+    icono: "🧽",
+    tipo: "Residuo mixto",
+    material: "Espuma sintética",
+    descripcion: "Las esponjas de cocina suelen estar fabricadas con materiales sintéticos difíciles de recuperar.",
+    instrucciones: "Consulta las opciones locales y evita mezclarlas con materiales reciclables.",
+    consejo: "Utiliza la esponja durante toda su vida útil.",
+    palabrasClave: ["esponja", "esponja cocina", "limpieza"]
+},
+
+{
+    id: 100,
+    nombre: "Cepillo de dientes usado",
+    nombreCorto: "Cepillo dental",
+    categoria: "otros",
+    icono: "🪥",
+    tipo: "Residuo mixto",
+    material: "Plástico y nylon",
+    descripcion: "Los cepillos de dientes combinan diferentes materiales y normalmente no se recuperan junto con el plástico convencional.",
+    instrucciones: "Consulta programas especiales de recuperación si existen en tu localidad.",
+    consejo: "No deseches el cepillo hasta que haya terminado su vida útil.",
+    palabrasClave: ["cepillo dientes", "cepillo dental", "cepillo", "dientes"]
+}
 ];
 
 
@@ -1633,7 +2415,30 @@ function toggleFavorito() {
 
     actualizarBotonFavorito();
 
+    actualizarEstadisticas();
+
+    mostrarMisGuardados();
+
+}function eliminarFavorito(id) {
+
+    let favoritos = obtenerFavoritos();
+
+    favoritos = favoritos.filter(
+        favoritoId => favoritoId !== id
+    );
+
+    localStorage.setItem(
+        "ecoclasificaFavoritos",
+        JSON.stringify(favoritos)
+    );
+
+    mostrarMisGuardados();
+
+    actualizarEstadisticas();
+
 }
+
+
 
 
 function actualizarBotonFavorito() {
@@ -1907,5 +2712,1189 @@ function filtrarCategoria(categoria) {
         behavior: "smooth",
         block: "start"
     });
+
+}/* =========================================================
+   RETO ECOCLASIFICA
+========================================================= */
+
+const preguntasQuiz = [
+
+    {
+        pregunta: "¿Dónde corresponde una cáscara de plátano?",
+        icono: "🍌",
+        opciones: [
+            "Plástico",
+            "Vidrio",
+            "Orgánico",
+            "Metal"
+        ],
+        correcta: 2,
+        explicacion: "La cáscara de plátano es un residuo orgánico."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer con una botella de plástico antes de separarla?",
+        icono: "🧴",
+        opciones: [
+            "Quemarla",
+            "Vaciarla y separarla correctamente",
+            "Enterrarla",
+            "Mezclarla con comida"
+        ],
+        correcta: 1,
+        explicacion: "Conviene vaciarla y separarla según el sistema disponible."
+    },
+
+    {
+        pregunta: "¿Dónde debe gestionarse una batería usada?",
+        icono: "🔋",
+        opciones: [
+            "Con residuos orgánicos",
+            "Con papel",
+            "En un punto de recolección adecuado",
+            "Con vidrio"
+        ],
+        correcta: 2,
+        explicacion: "Las baterías requieren una gestión especial."
+    },
+
+    {
+        pregunta: "¿De qué material suele estar hecha una lata de bebida?",
+        icono: "🥤",
+        opciones: [
+            "Aluminio",
+            "Cartón",
+            "Madera",
+            "Tela"
+        ],
+        correcta: 0,
+        explicacion: "Muchas latas de bebidas están fabricadas de aluminio."
+    },
+
+    {
+        pregunta: "¿Qué debes evitar hacer con una batería dañada?",
+        icono: "⚠️",
+        opciones: [
+            "Mantenerla alejada del calor",
+            "Llevarla a un punto adecuado",
+            "Perforarla",
+            "Manipularla con cuidado"
+        ],
+        correcta: 2,
+        explicacion: "Una batería dañada no debe perforarse ni exponerse al calor."
+    },
+
+    {
+        pregunta: "¿Qué puedes hacer con ropa que todavía está en buen estado?",
+        icono: "👕",
+        opciones: [
+            "Quemarla",
+            "Donarla o reutilizarla",
+            "Tirarla al agua",
+            "Mezclarla con comida"
+        ],
+        correcta: 1,
+        explicacion: "Donarla o reutilizarla prolonga su vida útil."
+    },
+
+    {
+        pregunta: "¿Qué material corresponde principalmente a un frasco?",
+        icono: "🫙",
+        opciones: [
+            "Vidrio",
+            "Papel",
+            "Tela",
+            "Caucho"
+        ],
+        correcta: 0,
+        explicacion: "Muchos frascos para alimentos están hechos de vidrio."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer antes de separar una lata de comida?",
+        icono: "🥫",
+        opciones: [
+            "Llenarla de agua",
+            "Quemarla",
+            "Vaciarla y retirar restos",
+            "Enterrarla"
+        ],
+        correcta: 2,
+        explicacion: "Es recomendable retirar los restos de comida."
+    },
+
+    {
+        pregunta: "¿Cuál de estos es un residuo electrónico?",
+        icono: "⌨️",
+        opciones: [
+            "Cáscara de huevo",
+            "Teclado",
+            "Revista",
+            "Cáscara de naranja"
+        ],
+        correcta: 1,
+        explicacion: "Un teclado contiene componentes electrónicos."
+    },
+
+    {
+        pregunta: "¿Cuál es una buena forma de reducir residuos?",
+        icono: "🌎",
+        opciones: [
+            "Usar más productos descartables",
+            "Quemar residuos",
+            "Reutilizar objetos",
+            "Mezclar todos los residuos"
+        ],
+        correcta: 2,
+        explicacion: "Reutilizar ayuda a prolongar la vida útil de los objetos."
+    },
+
+    {
+        pregunta: "¿Dónde va una cáscara de naranja?",
+        icono: "🍊",
+        opciones: [
+            "Metal",
+            "Orgánico",
+            "Electrónico",
+            "Vidrio"
+        ],
+        correcta: 1,
+        explicacion: "Las cáscaras de frutas pertenecen a la fracción orgánica."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer con una caja de cartón limpia?",
+        icono: "📦",
+        opciones: [
+            "Mojarla",
+            "Mezclarla con restos de comida",
+            "Aplastarla y separarla",
+            "Quemarla"
+        ],
+        correcta: 2,
+        explicacion: "El cartón limpio y seco puede separarse para recuperación."
+    },
+
+    {
+        pregunta: "¿Dónde corresponde un teclado viejo?",
+        icono: "⌨️",
+        opciones: [
+            "Papel",
+            "Orgánico",
+            "Electrónico",
+            "Vidrio"
+        ],
+        correcta: 2,
+        explicacion: "Los teclados son aparatos electrónicos."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer con un celular viejo?",
+        icono: "📱",
+        opciones: [
+            "Tirarlo con comida",
+            "Llevarlo a un sistema de residuos electrónicos",
+            "Quemarlo",
+            "Enterrarlo"
+        ],
+        correcta: 1,
+        explicacion: "Los celulares deben gestionarse como residuos electrónicos."
+    },
+
+    {
+        pregunta: "¿Qué conviene hacer con una mochila vieja que todavía sirve?",
+        icono: "🎒",
+        opciones: [
+            "Quemarla",
+            "Donarla o reutilizarla",
+            "Tirarla al agua",
+            "Romperla"
+        ],
+        correcta: 1,
+        explicacion: "Reutilizar o donar prolonga la vida útil de la mochila."
+    },
+
+    {
+        pregunta: "¿Qué material tiene un frasco de miel convencional?",
+        icono: "🍯",
+        opciones: [
+            "Vidrio",
+            "Tela",
+            "Madera",
+            "Caucho"
+        ],
+        correcta: 0,
+        explicacion: "Muchos frascos de miel están hechos de vidrio."
+    },
+
+    {
+        pregunta: "¿Dónde debería gestionarse una impresora antigua?",
+        icono: "🖨️",
+        opciones: [
+            "Orgánico",
+            "Papel",
+            "Residuos electrónicos",
+            "Vidrio"
+        ],
+        correcta: 2,
+        explicacion: "Las impresoras son aparatos electrónicos."
+    },
+
+    {
+        pregunta: "¿Qué puedes hacer con una caja de zapatos?",
+        icono: "👟",
+        opciones: [
+            "Reutilizarla",
+            "Quemarla",
+            "Tirarla al agua",
+            "Llenarla de aceite"
+        ],
+        correcta: 0,
+        explicacion: "Las cajas pueden reutilizarse antes de reciclarlas."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer con un envase de yogur?",
+        icono: "🥛",
+        opciones: [
+            "Dejarle restos de comida",
+            "Vaciarlo y gestionarlo según su material",
+            "Quemarlo",
+            "Enterrarlo"
+        ],
+        correcta: 1,
+        explicacion: "Conviene vaciarlo y gestionarlo según las reglas locales."
+    },
+
+    {
+        pregunta: "¿Cuál de estos residuos es orgánico?",
+        icono: "🥬",
+        opciones: [
+            "Hojas de lechuga",
+            "Cargador",
+            "Lata",
+            "Espejo"
+        ],
+        correcta: 0,
+        explicacion: "Las hojas de vegetales son materia orgánica."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer con restos de arroz?",
+        icono: "🍚",
+        opciones: [
+            "Separarlos como orgánicos",
+            "Ponerlos con vidrio",
+            "Ponerlos con electrónicos",
+            "Quemarlos"
+        ],
+        correcta: 0,
+        explicacion: "Los restos de alimentos pertenecen a los residuos orgánicos."
+    },
+
+    {
+        pregunta: "¿Qué puedes hacer con una toalla vieja?",
+        icono: "🧻",
+        opciones: [
+            "Reutilizarla como paño",
+            "Quemarla",
+            "Tirarla al río",
+            "Mezclarla con comida"
+        ],
+        correcta: 0,
+        explicacion: "Una toalla puede reutilizarse como paño de limpieza."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer con una pila AA usada?",
+        icono: "🔋",
+        opciones: [
+            "Tirarla con comida",
+            "Llevarla a un punto de recolección",
+            "Quemarla",
+            "Tirarla al agua"
+        ],
+        correcta: 1,
+        explicacion: "Las pilas requieren una gestión adecuada."
+    },
+
+    {
+        pregunta: "¿Qué es mejor hacer con un juguete que todavía funciona?",
+        icono: "🧸",
+        opciones: [
+            "Quemarlo",
+            "Donarlo o reutilizarlo",
+            "Romperlo",
+            "Tirarlo inmediatamente"
+        ],
+        correcta: 1,
+        explicacion: "Donarlo o reutilizarlo evita generar un residuo innecesariamente."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer con un cargador viejo?",
+        icono: "🔌",
+        opciones: [
+            "Tirarlo como orgánico",
+            "Gestionarlo como electrónico",
+            "Quemarlo",
+            "Mezclarlo con papel"
+        ],
+        correcta: 1,
+        explicacion: "Los cargadores son residuos eléctricos o electrónicos."
+    },
+
+    {
+        pregunta: "¿Qué puedes hacer antes de desechar ropa?",
+        icono: "👕",
+        opciones: [
+            "Revisar si puede repararse o donarse",
+            "Mojarla",
+            "Quemarla",
+            "Tirarla con comida"
+        ],
+        correcta: 0,
+        explicacion: "Reparar, reutilizar o donar puede prolongar la vida de la ropa."
+    },
+
+    {
+        pregunta: "¿Dónde corresponde un mouse viejo?",
+        icono: "🖱️",
+        opciones: [
+            "Electrónico",
+            "Orgánico",
+            "Papel",
+            "Vidrio"
+        ],
+        correcta: 0,
+        explicacion: "Los mouse contienen componentes electrónicos."
+    },
+
+    {
+        pregunta: "¿Qué puedes hacer con una revista vieja?",
+        icono: "📖",
+        opciones: [
+            "Reutilizarla o reciclarla según el sistema",
+            "Quemarla",
+            "Mezclarla con aceite",
+            "Tirarla al río"
+        ],
+        correcta: 0,
+        explicacion: "Las revistas pueden reutilizarse o gestionarse como papel cuando corresponda."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer con un frasco de especias vacío?",
+        icono: "🧂",
+        opciones: [
+            "Dejarlo lleno de comida",
+            "Limpiarlo y separarlo correctamente",
+            "Quemarlo",
+            "Enterrarlo"
+        ],
+        correcta: 1,
+        explicacion: "Los frascos de vidrio pueden reutilizarse o gestionarse correctamente."
+    },
+
+    {
+        pregunta: "¿Qué tipo de residuo es una cámara digital antigua?",
+        icono: "📷",
+        opciones: [
+            "Orgánico",
+            "Electrónico",
+            "Papel",
+            "Metal doméstico común"
+        ],
+        correcta: 1,
+        explicacion: "Una cámara digital contiene componentes electrónicos."
+    },
+
+    {
+        pregunta: "¿Qué puedes hacer con una manguera vieja?",
+        icono: "🪴",
+        opciones: [
+            "Repararla o reutilizarla",
+            "Quemarla",
+            "Tirarla al agua",
+            "Mezclarla con comida"
+        ],
+        correcta: 0,
+        explicacion: "Antes de desecharla, conviene revisar si puede reutilizarse."
+    },
+
+    {
+        pregunta: "¿Qué deberías hacer con medicamentos vencidos?",
+        icono: "💊",
+        opciones: [
+            "Tirarlos por el inodoro",
+            "Llevarlos a un sistema de recolección adecuado",
+            "Quemarlos",
+            "Mezclarlos con comida"
+        ],
+        correcta: 1,
+        explicacion: "Los medicamentos vencidos necesitan una gestión responsable."
+    },
+
+    {
+        pregunta: "¿Qué debes evitar con pintura sobrante?",
+        icono: "🎨",
+        opciones: [
+            "Consultar cómo desecharla",
+            "Guardarla correctamente",
+            "Verterla por el desagüe",
+            "Mantenerla cerrada"
+        ],
+        correcta: 2,
+        explicacion: "La pintura no debe verterse directamente al desagüe."
+    },
+
+    {
+        pregunta: "¿Qué material predomina en un tornillo?",
+        icono: "🔩",
+        opciones: [
+            "Metal",
+            "Papel",
+            "Tela",
+            "Materia orgánica"
+        ],
+        correcta: 0,
+        explicacion: "Los tornillos son principalmente metálicos."
+    },
+
+    {
+        pregunta: "¿Qué puedes hacer con una llave metálica vieja?",
+        icono: "🔑",
+        opciones: [
+            "Reutilizarla o recuperarla como metal",
+            "Quemarla",
+            "Tirarla con restos de comida",
+            "Enterrarla"
+        ],
+        correcta: 0,
+        explicacion: "Una llave metálica puede reutilizarse o recuperarse."
+    },
+
+    {
+        pregunta: "¿Qué haces con una extensión eléctrica dañada?",
+        icono: "🔌",
+        opciones: [
+            "Quemarla",
+            "Gestionarla como residuo eléctrico/electrónico",
+            "Tirarla con orgánicos",
+            "Tirarla al agua"
+        ],
+        correcta: 1,
+        explicacion: "Las extensiones contienen cables y componentes eléctricos."
+    },
+
+    {
+        pregunta: "¿Qué puede hacerse con papel de regalo en buen estado?",
+        icono: "🎁",
+        opciones: [
+            "Reutilizarlo",
+            "Quemarlo",
+            "Mojarlo",
+            "Tirarlo inmediatamente"
+        ],
+        correcta: 0,
+        explicacion: "Reutilizar el papel reduce la cantidad de residuos generados."
+    },
+
+    {
+        pregunta: "¿Qué haces con una bolsa de papel limpia?",
+        icono: "🛍️",
+        opciones: [
+            "Reutilizarla antes de reciclarla",
+            "Quemarla",
+            "Llenarla de aceite",
+            "Tirarla al agua"
+        ],
+        correcta: 0,
+        explicacion: "Reutilizarla varias veces ayuda a reducir residuos."
+    },
+
+    {
+        pregunta: "¿Qué material corresponde a una botella de agua PET?",
+        icono: "💧",
+        opciones: [
+            "Plástico",
+            "Vidrio",
+            "Metal",
+            "Tela"
+        ],
+        correcta: 0,
+        explicacion: "Las botellas PET son de plástico."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer con una tapa de botella?",
+        icono: "🔵",
+        opciones: [
+            "Gestionarla según las reglas del sistema local",
+            "Quemarla",
+            "Tirarla al agua",
+            "Mezclarla con comida"
+        ],
+        correcta: 0,
+        explicacion: "Las reglas para las tapas pueden variar según el sistema de reciclaje."
+    },
+
+    {
+        pregunta: "¿Qué puedes hacer con una mochila vieja?",
+        icono: "🎒",
+        opciones: [
+            "Donarla o repararla",
+            "Quemarla",
+            "Tirarla inmediatamente",
+            "Tirarla al río"
+        ],
+        correcta: 0,
+        explicacion: "Reparar o donar prolonga la vida útil de la mochila."
+    },
+
+    {
+        pregunta: "¿Qué haces con restos de pasta?",
+        icono: "🍝",
+        opciones: [
+            "Separarlos como orgánicos",
+            "Ponerlos con vidrio",
+            "Ponerlos con electrónicos",
+            "Ponerlos con metal"
+        ],
+        correcta: 0,
+        explicacion: "Los restos de alimentos son residuos orgánicos."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer con un router viejo?",
+        icono: "📡",
+        opciones: [
+            "Gestionarlo como electrónico",
+            "Quemarlo",
+            "Ponerlo con papel",
+            "Ponerlo con orgánicos"
+        ],
+        correcta: 0,
+        explicacion: "Los routers son aparatos electrónicos."
+    },
+
+    {
+        pregunta: "¿Qué puedes hacer con una pelota vieja que aún puede repararse?",
+        icono: "⚽",
+        opciones: [
+            "Repararla o reutilizarla",
+            "Quemarla",
+            "Tirarla al agua",
+            "Mezclarla con comida"
+        ],
+        correcta: 0,
+        explicacion: "Reparar y reutilizar es preferible a desecharla inmediatamente."
+    },
+
+    {
+        pregunta: "¿Qué haces con un cepillo de dientes usado?",
+        icono: "🪥",
+        opciones: [
+            "Consultar si existe un programa de recuperación",
+            "Quemarlo",
+            "Tirarlo al agua",
+            "Mezclarlo con comida"
+        ],
+        correcta: 0,
+        explicacion: "Los cepillos combinan distintos materiales y pueden requerir una gestión específica."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer con una esponja de cocina usada?",
+        icono: "🧽",
+        opciones: [
+            "Revisar las opciones locales de disposición",
+            "Quemarla",
+            "Tirarla al agua",
+            "Mezclarla con papel reciclable"
+        ],
+        correcta: 0,
+        explicacion: "Las esponjas suelen estar hechas de materiales difíciles de recuperar."
+    },
+
+    {
+        pregunta: "¿Qué haces con un envase de champú vacío?",
+        icono: "🧴",
+        opciones: [
+            "Vaciarlo y gestionarlo según su material",
+            "Quemarlo",
+            "Enterrarlo",
+            "Tirarlo con comida"
+        ],
+        correcta: 0,
+        explicacion: "Los envases deben vaciarse y clasificarse según el sistema disponible."
+    },
+
+    {
+        pregunta: "¿Qué puedes hacer con una copa que todavía está en buen estado?",
+        icono: "🥂",
+        opciones: [
+            "Reutilizarla",
+            "Romperla",
+            "Quemarla",
+            "Tirarla al agua"
+        ],
+        correcta: 0,
+        explicacion: "Reutilizar un objeto en buen estado evita generar residuos innecesarios."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer con un monitor que todavía funciona?",
+        icono: "🖥️",
+        opciones: [
+            "Reutilizarlo o donarlo",
+            "Romperlo",
+            "Quemarlo",
+            "Tirarlo al agua"
+        ],
+        correcta: 0,
+        explicacion: "Reutilizar o donar un equipo funcional prolonga su vida útil."
+    },
+
+    {
+        pregunta: "¿Qué haces con una caja de cartón mojada?",
+        icono: "📦",
+        opciones: [
+            "Revisar si todavía puede recuperarse",
+            "Mezclarla con papel seco sin revisar",
+            "Quemarla",
+            "Tirarla al agua"
+        ],
+        correcta: 0,
+        explicacion: "La humedad puede afectar la recuperación del cartón."
+    },
+
+    {
+        pregunta: "¿Qué debes priorizar antes de reciclar un objeto?",
+        icono: "♻️",
+        opciones: [
+            "Reutilizarlo si todavía sirve",
+            "Romperlo",
+            "Quemarlo",
+            "Tirarlo inmediatamente"
+        ],
+        correcta: 0,
+        explicacion: "Reutilizar ayuda a alargar la vida útil del producto."
+    },
+
+    {
+        pregunta: "¿Qué ayuda a reducir la cantidad de residuos?",
+        icono: "🌎",
+        opciones: [
+            "Comprar solo lo necesario",
+            "Usar más descartables",
+            "Mezclar residuos",
+            "Quemar basura"
+        ],
+        correcta: 0,
+        explicacion: "Consumir de manera responsable evita generar residuos innecesarios."
+    },
+
+    {
+        pregunta: "¿Qué debes hacer cuando no estás seguro de cómo gestionar un residuo?",
+        icono: "🤔",
+        opciones: [
+            "Investigar las reglas locales",
+            "Quemarlo",
+            "Tirarlo a cualquier contenedor",
+            "Tirarlo al agua"
+        ],
+        correcta: 0,
+        explicacion: "Las reglas pueden variar, así que conviene revisar la normativa o sistema local."
+    }
+
+];
+
+
+
+let quizPreguntaActual = 0;
+let quizPuntajeActual = 0;
+let quizRespondido = false;
+
+let preguntasPartida = [];
+
+function iniciarQuiz() {
+
+    preguntasPartida =
+        [...preguntasQuiz]
+            .sort(() => Math.random() - 0.5)
+            .slice(0, 10);
+
+
+    quizPreguntaActual = 0;
+
+    quizPuntajeActual = 0;
+
+    quizRespondido = false;
+
+    mostrarPreguntaQuiz();
+
+}
+
+
+function mostrarPreguntaQuiz() {
+
+    const pregunta =
+    preguntasPartida[quizPreguntaActual];
+
+    document.getElementById("quizProgreso").textContent =
+        `Pregunta ${quizPreguntaActual + 1} de ${preguntasQuiz.length}`;
+
+
+    document.getElementById("quizPuntos").textContent =
+        quizPuntajeActual;
+
+
+    document.getElementById("quizIcono").textContent =
+        pregunta.icono;
+
+
+    document.getElementById("quizPregunta").textContent =
+        pregunta.pregunta;
+
+
+    document.getElementById("quizResultado").innerHTML =
+        "";
+
+
+    const contenedor =
+        document.getElementById("quizOpciones");
+
+
+    contenedor.innerHTML = "";
+
+
+    quizRespondido = false;
+
+const opcionesMezcladas =
+    pregunta.opciones
+        .map((opcion, indice) => ({
+            texto: opcion,
+            esCorrecta:
+                indice === pregunta.correcta
+        }))
+        .sort(() => Math.random() - 0.5);
+
+
+opcionesMezcladas.forEach(opcion => {
+
+    const boton =
+        document.createElement("button");
+
+
+    boton.type = "button";
+
+    boton.className =
+        "quiz-opcion";
+
+
+    boton.textContent =
+        opcion.texto;
+
+
+    boton.addEventListener(
+        "click",
+        () => responderQuiz(opcion.esCorrecta)
+    );
+
+
+    contenedor.appendChild(
+        boton
+    );
+
+});
+    
+
+
+    const botonPrincipal =
+        document.getElementById("quizBoton");
+
+
+    botonPrincipal.disabled = true;
+
+
+    botonPrincipal.textContent =
+        quizPreguntaActual === preguntasQuiz.length - 1
+            ? "🏁 Ver resultado"
+            : "➡️ Siguiente pregunta";
+
+
+
+    document.getElementById(
+        "quizPuntos"
+    ).textContent =
+        quizPuntajeActual;
+
+
+    actualizarEstadisticas();
+
+
+    const botonPrincipal =
+        document.getElementById(
+            "quizBoton"
+        );
+
+
+    botonPrincipal.disabled = false;
+
+
+    botonPrincipal.onclick =
+        siguientePreguntaQuiz;
+
+    }function siguientePreguntaQuiz() {
+
+    if (!quizRespondido) {
+        return;
+    }
+
+
+    if (
+        quizPreguntaActual >=
+        preguntasPartida.length - 1
+    ) {
+
+        finalizarQuiz();
+
+        return;
+
+    }
+
+
+    quizPreguntaActual++;
+
+    mostrarPreguntaQuiz();
+
+}function finalizarQuiz() {
+
+    const total =
+        preguntasPartida.length;
+
+
+    const aciertos =
+        quizPuntajeActual / 10;
+
+
+    let mensaje;
+
+
+    if (aciertos === 10) {
+
+        mensaje =
+            "🏆 ¡Perfecto! Dominas la clasificación de residuos.";
+
+    } else if (aciertos >= 8) {
+
+        mensaje =
+            "🌎 ¡Excelente trabajo!";
+
+    } else if (aciertos >= 5) {
+
+        mensaje =
+            "♻️ ¡Muy bien! Sigue aprendiendo.";
+
+    } else {
+
+        mensaje =
+            "🌱 Sigue practicando. Cada intento ayuda.";
+
+    }
+
+
+    document.getElementById(
+        "quizProgreso"
+    ).textContent =
+        "Reto terminado";
+
+
+    document.getElementById(
+        "quizIcono"
+    ).textContent =
+        aciertos >= 8
+            ? "🏆"
+            : "🌱";
+
+
+    document.getElementById(
+        "quizPregunta"
+    ).innerHTML = `
+
+        Obtuviste
+
+        <strong>
+            ${aciertos} / ${total}
+        </strong>
+
+        respuestas correctas
+
+    `;
+
+
+    document.getElementById(
+        "quizOpciones"
+    ).innerHTML = "";
+
+
+    document.getElementById(
+        "quizResultado"
+    ).innerHTML = `
+
+        <div class="quiz-final">
+
+            <strong>
+                ⭐ ${quizPuntajeActual} puntos
+            </strong>
+
+            <p>
+                ${mensaje}
+            </p>
+
+        </div>
+
+    `;
+
+
+    const boton =
+        document.getElementById(
+            "quizBoton"
+        );
+
+
+    boton.disabled = false;
+
+    boton.textContent =
+        "🔄 Jugar otra vez";
+
+
+    boton.onclick =
+        iniciarQuiz;
+
+}
+
+
+
+
+/* =========================================================
+   ESTADÍSTICAS
+========================================================= */
+
+let quizAciertosTotales = 0;
+
+
+/* -----------------------------------------
+   ACTUALIZAR ESTADÍSTICAS
+----------------------------------------- */
+
+function actualizarEstadisticas() {
+
+    const residuosElemento =
+        document.getElementById(
+            "estadisticaResiduos"
+        );
+
+    const favoritosElemento =
+        document.getElementById(
+            "estadisticaFavoritos"
+        );
+
+    const puntosElemento =
+        document.getElementById(
+            "estadisticaPuntos"
+        );
+
+    const aciertosElemento =
+        document.getElementById(
+            "estadisticaAciertos"
+        );
+
+
+    if (residuosElemento) {
+
+        residuosElemento.textContent =
+            residuos.length;
+
+    }
+
+
+    if (favoritosElemento) {
+
+        favoritosElemento.textContent =
+            obtenerFavoritos().length;
+
+    }
+
+
+    if (puntosElemento) {
+
+        puntosElemento.textContent =
+            quizPuntajeActual || 0;
+
+    }
+
+
+    if (aciertosElemento) {
+
+        aciertosElemento.textContent =
+            quizAciertosTotales;
+
+    }
+
+}/* =========================================================
+   MOSTRAR MIS RESIDUOS GUARDADOS
+========================================================= */
+
+function mostrarMisGuardados() {
+
+    const contenedor =
+        document.getElementById(
+            "listaGuardados"
+        );
+
+    if (!contenedor) return;
+
+
+    const favoritos =
+        obtenerFavoritos();
+
+
+    contenedor.innerHTML = "";
+
+
+    if (favoritos.length === 0) {
+
+        contenedor.innerHTML = `
+
+            <div class="guardado-vacio">
+
+                <div class="guardado-vacio-icono">
+                    ⭐
+                </div>
+
+                <h3>
+                    Todavía no tienes residuos guardados
+                </h3>
+
+                <p>
+                    Abre un residuo y pulsa
+                    "⭐ Guardar residuo"
+                    para verlo aquí.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    const residuosGuardados =
+        residuos.filter(
+            residuo =>
+                favoritos.includes(
+                    residuo.id
+                )
+        );
+
+
+    residuosGuardados.forEach(
+        residuo => {
+
+            const tarjeta =
+                document.createElement(
+                    "article"
+                );
+
+
+            tarjeta.className =
+                "guardado-card";
+
+
+            tarjeta.innerHTML = `
+
+                <div class="guardado-icono">
+                    ${residuo.icono}
+                </div>
+
+                <span class="guardado-categoria">
+                    ${obtenerNombreCategoria(
+                        residuo.categoria
+                    )}
+                </span>
+
+                <h3>
+                    ${residuo.nombre}
+                </h3>
+
+                <p>
+                    ${residuo.descripcion}
+                </p>
+
+                <div class="guardado-acciones">
+
+                    <button
+                        class="guardado-ver"
+                        type="button"
+                    >
+                        📋 Ver información
+                    </button>
+
+                    <button
+                        class="guardado-eliminar"
+                        type="button"
+                    >
+                        🗑️ Quitar
+                    </button>
+
+                </div>
+
+            `;
+
+
+            const botonVer =
+                tarjeta.querySelector(
+                    ".guardado-ver"
+                );
+
+
+            const botonEliminar =
+                tarjeta.querySelector(
+                    ".guardado-eliminar"
+                );
+
+
+            botonVer.addEventListener(
+                "click",
+                () => {
+
+                    abrirModal(residuo);
+
+                }
+            );
+
+
+            botonEliminar.addEventListener(
+                "click",
+                () => {
+
+                    eliminarFavorito(
+                        residuo.id
+                    );
+
+                }
+            );
+
+
+            contenedor.appendChild(
+                tarjeta
+            );
+
+        }
+    );
 
 }
