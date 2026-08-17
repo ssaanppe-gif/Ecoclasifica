@@ -4292,3 +4292,86 @@ body::after {
         border-color 0.35s ease,
         box-shadow 0.35s ease;
 }
+/* =========================================================
+   MODAL COMPLETAMENTE LEGIBLE EN MODO OSCURO
+========================================================= */
+
+body.modo-oscuro #modalResiduo {
+    color: #ecfdf5 !important;
+}
+
+
+/* CONTENEDOR DEL MODAL */
+
+body.modo-oscuro #modalResiduo > div,
+body.modo-oscuro #modalResiduo .modal-content,
+body.modo-oscuro #modalResiduo .modal-box {
+    background: #0d1b14 !important;
+    color: #ecfdf5 !important;
+}
+
+
+/* TÍTULO */
+
+body.modo-oscuro #modalTitulo {
+    color: #ffffff !important;
+}
+
+
+/* CATEGORÍA */
+
+body.modo-oscuro #modalCategoria {
+    color: #86efac !important;
+}
+
+
+/* TEXTO PRINCIPAL */
+
+body.modo-oscuro #modalDescripcion,
+body.modo-oscuro #modalMaterial,
+body.modo-oscuro #modalTipo,
+body.modo-oscuro #modalInstrucciones,
+body.modo-oscuro #modalConsejo {
+    color: #d1fae5 !important;
+}
+
+
+/* ETIQUETAS COMO:
+   MATERIAL
+   TIPO
+   INSTRUCCIONES
+   CONSEJO */
+
+body.modo-oscuro #modalResiduo label,
+body.modo-oscuro #modalResiduo small,
+body.modo-oscuro #modalResiduo .modal-label,
+body.modo-oscuro #modalResiduo .detalle-label {
+    color: #86efac !important;
+}
+
+
+/* BOTONES DEL MODAL */
+
+body.modo-oscuro #modalResiduo button {
+    color: #ecfdf5 !important;
+}
+
+
+body.modo-oscuro #modalResiduo .btn-cerrar,
+body.modo-oscuro #modalResiduo .modal-close {
+    color: #d1fae5 !important;
+}
+
+
+/* FONDOS DE LAS CAJAS INTERNAS */
+
+body.modo-oscuro #modalResiduo .modal-info,
+body.modo-oscuro #modalResiduo .modal-detail,
+body.modo-oscuro #modalResiduo .info-item,
+body.modo-oscuro #modalResiduo .detail-item {
+    background: #12271c !important;
+    color: #d1fae5 !important;
+
+    border-color:
+        rgba(255,255,255,0.08) !important;
+}
