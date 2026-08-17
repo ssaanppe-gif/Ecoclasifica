@@ -4225,3 +4225,39 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarMisGuardados();
 
 });
+/* =========================================================
+   PANTALLA DE BIENVENIDA
+========================================================= */
+
+const botonComenzar =
+    document.getElementById("botonComenzar");
+
+const pantallaBienvenida =
+    document.getElementById("pantallaBienvenida");
+
+
+if (
+    botonComenzar &&
+    pantallaBienvenida
+) {
+
+    botonComenzar.addEventListener(
+        "click",
+        () => {
+
+            pantallaBienvenida.classList.add(
+                "bienvenida-salir"
+            );
+
+
+            setTimeout(() => {
+
+                pantallaBienvenida.style.display =
+                    "none";
+
+            }, 650);
+
+        }
+    );
+
+}
