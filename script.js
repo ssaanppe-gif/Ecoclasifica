@@ -1995,54 +1995,77 @@ function mezclarResiduos(lista) {
 
 }
 
+/* =========================================================
+   RESIDUOS FRECUENTES
+   PC     → 25 residuos
+   CELULAR → 5 residuos aleatorios
+   Cambian cada vez que se carga la función
+========================================================= */
 
 function mostrarResiduosFrecuentes() {
 
     if (!listaResiduos) return;
 
 
-    /* Limpiar temporizador anterior */
-    if (residuosFrecuentesTimer) {
-
-        clearInterval(
-            residuosFrecuentesTimer
-        );
-
-        residuosFrecuentesTimer = null;
-
-    }
-
-
-    residuosFrecuentesModo = "todos";
-
-
-    /* 
-       PC  = 25 residuos
-       CEL = 6 residuos
-    */
-
+    /* PC = 25 | Celular = 5 */
     const esCelular =
         window.innerWidth <= 700;
 
 
-    const cantidadVisible =
-        esCelular ? 6 : 25;
+    const cantidad =
+        esCelular ? 5 : 25;
 
 
-    function pintarGrupo() {
-
-        const grupo =
-            mezclarResiduos(residuos)
-                .slice(0, cantidadVisible);
-
-
-        listaResiduos.innerHTML = "";
+    /* Crear una copia para no alterar la base original */
+    const disponibles = [
+        ...residuos
+    ];
 
 
-        grupo.forEach(residuo => {
+    /* Mezclar aleatoriamente */
+    for (
+        let i = disponibles.length - 1;
+        i > 0;
+        i--
+    ) {
+
+        const j =
+            Math.floor(
+                Math.random() * (i + 1)
+            );
+
+
+        [
+            disponibles[i],
+            disponibles[j]
+        ] = [
+            disponibles[j],
+            disponibles[i]
+        ];
+
+    }
+
+
+    /* Elegir los que se mostrarán */
+    const seleccionados =
+        disponibles.slice(
+            0,
+            cantidad
+        );
+
+
+    /* Limpiar anteriores */
+    listaResiduos.innerHTML = "";
+
+
+    /* Crear tarjetas */
+    seleccionados.forEach(
+        residuo => {
 
             const tarjeta =
-                document.createElement("article");
+                document.createElement(
+                    "article"
+                );
 
 
             tarjeta.className =
@@ -2096,7 +2119,9 @@ function mostrarResiduosFrecuentes() {
 
             tarjeta.addEventListener(
                 "click",
-                () => abrirModal(residuo)
+                () => {
+                    abrirModal(residuo);
+                }
             );
 
 
@@ -2104,34 +2129,11 @@ function mostrarResiduosFrecuentes() {
                 tarjeta
             );
 
-        });
-
-    }
-
-
-    /* Mostrar inmediatamente */
-    pintarGrupo();
-
-
-    /*
-       En celular cambia automáticamente
-       cada 5 segundos.
-
-       En PC dejamos los 25 visibles
-       y no hacemos rotación.
-    */
-
-    if (esCelular) {
-
-        residuosFrecuentesTimer =
-            setInterval(
-                pintarGrupo,
-                5000
-            );
-
-    }
+        }
+    );
 
 }
+
 
 /* =========================================================
    ABRIR MODAL DE RESIDUO
