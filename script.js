@@ -1733,7 +1733,32 @@ const residuos = [
 /* =========================================================
    VARIABLES
 ========================================================= */
+/* =========================================================
+   FUNCIONES NECESARIAS PARA MOSTRAR LOS RESIDUOS
+========================================================= */
 
+function obtenerNombreCategoria(categoria) {
+
+    const nombres = {
+        papel: "Papel y cartón",
+        plastico: "Plásticos",
+        vidrio: "Vidrio",
+        metal: "Metales",
+        organico: "Orgánicos",
+        electronico: "Electrónicos",
+        peligroso: "Peligrosos",
+        otros: "Otros"
+    };
+
+    return nombres[categoria] || "Otros";
+}
+
+
+function mostrarTodosLosResiduos() {
+
+    mostrarResiduosFrecuentes();
+
+}
 const buscador = document.getElementById("buscadorResiduo");
 const resultadoBusqueda = document.getElementById("resultadoBusqueda");
 const listaResiduos = document.getElementById("listaResiduos");
