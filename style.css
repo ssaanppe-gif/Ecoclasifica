@@ -105,37 +105,4 @@
 }
 
 
-/* =========================================================
-   CELULARES MUY BÁSICOS
-========================================================= */
 
-@media (max-width: 480px) {
-
-    /* Cero partículas */
-    .fondo-animado {
-        display: none !important;
-    }
-
-
-    /* Cero animaciones de scroll */
-    .animacion-scroll,
-    .animacion-scroll.animacion-visible {
-        opacity: 1 !important;
-        transform: none !important;
-        transition: none !important;
-    }
-
-
-    /* Tarjetas todavía más simples */
-    .waste-card,
-    .category-card,
-    .guardado-card,
-    .estadistica-card,
-    .tip-card,
-    .guia-card,
-    .result-card,
-    .quiz-card {
-        box-shadow: none !important;
-        transition: none !important;
-    }
-}
