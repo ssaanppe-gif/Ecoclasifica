@@ -1979,126 +1979,161 @@ function crearTarjetaResultado(residuo) {
 /* =========================================================
    MENSAJE DE BÚSQUEDA
 ========================================================= */
+/* =========================================================
+   RESIDUOS FRECUENTES OPTIMIZADOS
+========================================================= */
 
-function mostrarMensajeBusqueda(icono, titulo, descripcion) {
+let residuosFrecuentesTimer = null;
+let residuosFrecuentesModo = "todos";
 
-    resultadoBusqueda.innerHTML = `
 
-        <div class="empty-search">
+function mezclarResiduos(lista) {
 
-            <div class="empty-icon">
-                ${icono}
-            </div>
-
-            <h3>
-                ${titulo}
-            </h3>
-
-            <p>
-                ${descripcion}
-            </p>
-
-        </div>
-
-    `;
+    return [...lista].sort(
+        () => Math.random() - 0.5
+    );
 
 }
 
 
-/* =========================================================
-   NOMBRE DE CATEGORÍAS
-========================================================= */
+function mostrarResiduosFrecuentes() {
 
-function obtenerNombreCategoria(categoria) {
-
-    const nombres = {
-
-        papel: "Papel y cartón",
-
-        plastico: "Plásticos",
-
-        vidrio: "Vidrio",
-
-        metal: "Metales",
-
-        organico: "Orgánicos",
-
-        electronico: "Electrónicos",
-
-        peligroso: "Peligrosos",
-
-        otros: "Otros"
-
-    };
-
-    return nombres[categoria] || "Otros";
-
-}
+    if (!listaResiduos) return;
 
 
-/* =========================================================
-   MOSTRAR TODOS LOS RESIDUOS
-========================================================= */
+    /* Limpiar temporizador anterior */
+    if (residuosFrecuentesTimer) {
 
-function mostrarTodosLosResiduos() {
+        clearInterval(
+            residuosFrecuentesTimer
+        );
 
-    listaResiduos.innerHTML = "";
+        residuosFrecuentesTimer = null;
 
-    residuos.forEach(residuo => {
+    }
 
-        const tarjeta = document.createElement("article");
 
-        tarjeta.className = "waste-card";
+    residuosFrecuentesModo = "todos";
 
-        tarjeta.innerHTML = `
 
-            <div class="waste-card-top">
+    /* 
+       PC  = 25 residuos
+       CEL = 6 residuos
+    */
 
-                <div class="waste-card-icon">
-                    ${residuo.icono}
+    const esCelular =
+        window.innerWidth <= 700;
+
+
+    const cantidadVisible =
+        esCelular ? 6 : 25;
+
+
+    function pintarGrupo() {
+
+        const grupo =
+            mezclarResiduos(residuos)
+                .slice(0, cantidadVisible);
+
+
+        listaResiduos.innerHTML = "";
+
+
+        grupo.forEach(residuo => {
+
+            const tarjeta =
+                document.createElement("article");
+
+
+            tarjeta.className =
+                "waste-card";
+
+
+            tarjeta.innerHTML = `
+                <div class="waste-card-top">
+
+                    <div class="waste-card-icon">
+                        ${residuo.icono}
+                    </div>
+
+                    <span class="waste-arrow">
+                        →
+                    </span>
+
                 </div>
 
-                <span class="waste-arrow">
-                    →
+
+                <span class="waste-category">
+                    ${obtenerNombreCategoria(
+                        residuo.categoria
+                    )}
                 </span>
 
-            </div>
 
-            <span class="waste-category">
-                ${obtenerNombreCategoria(residuo.categoria)}
-            </span>
+                <h3>
+                    ${residuo.nombre}
+                </h3>
 
-            <h3>
-                ${residuo.nombre}
-            </h3>
 
-            <p>
-                ${residuo.descripcion}
-            </p>
+                <p>
+                    ${residuo.descripcion}
+                </p>
 
-            <div class="waste-card-footer">
 
-                <span>
-                    Ver información
-                </span>
+                <div class="waste-card-footer">
 
-                <span>
-                    🔎
-                </span>
+                    <span>
+                        Ver información
+                    </span>
 
-            </div>
+                    <span>
+                        🔎
+                    </span>
 
-        `;
-tarjeta.addEventListener("click", () => {
+                </div>
+            `;
 
-    abrirModal(residuo);
 
-});
-        listaResiduos.appendChild(tarjeta);
+            tarjeta.addEventListener(
+                "click",
+                () => abrirModal(residuo)
+            );
 
-    });
 
-}/* =========================================================
+            listaResiduos.appendChild(
+                tarjeta
+            );
+
+        });
+
+    }
+
+
+    /* Mostrar inmediatamente */
+    pintarGrupo();
+
+
+    /*
+       En celular cambia automáticamente
+       cada 5 segundos.
+
+       En PC dejamos los 25 visibles
+       y no hacemos rotación.
+    */
+
+    if (esCelular) {
+
+        residuosFrecuentesTimer =
+            setInterval(
+                pintarGrupo,
+                5000
+            );
+
+    }
+
+}
+
+/* =========================================================
    ABRIR MODAL DE RESIDUO
 ========================================================= */
 
