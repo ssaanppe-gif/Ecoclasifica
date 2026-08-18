@@ -1169,7 +1169,11 @@
 <!-- =====================================================
      PANTALLA DE BIENVENIDA
 ===================================================== -->
-
+<input
+    type="checkbox"
+    id="bienvenidaControl"
+    hidden
+>
 <div id="pantallaBienvenida" class="pantalla-bienvenida">
 
     <div class="bienvenida-contenido">
@@ -1213,23 +1217,13 @@
         </div>
 
        <button
-    id="botonComenzar"
+    <label
+    for="bienvenidaControl"
     class="boton-comenzar"
-    type="button"
-    onclick="
-        document
-            .getElementById('pantallaBienvenida')
-            .classList.add('bienvenida-salir');
-
-        setTimeout(() => {
-            document
-                .getElementById('pantallaBienvenida')
-                .remove();
-        }, 650);
-    "
 >
     Comenzar
     <span>→</span>
+</label>
 </button>
         </button>
 
