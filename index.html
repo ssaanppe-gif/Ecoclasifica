@@ -1166,7 +1166,7 @@
 
 </div>
     <script src="script.js"></script>
-<!-- =====================================================
+    <!-- =====================================================
      PANTALLA DE BIENVENIDA
 ===================================================== -->
 <input
@@ -1217,13 +1217,23 @@
         </div>
 
        <button
-    <label
-    for="bienvenidaControl"
+  <button
+    id="botonComenzar"
     class="boton-comenzar"
+    type="button"
+    style="
+        position: relative;
+        z-index: 99999;
+        pointer-events: auto;
+        cursor: pointer;
+    "
+    onclick="
+        document.getElementById('pantallaBienvenida').style.display = 'none';
+    "
 >
     Comenzar
     <span>→</span>
-</label>
+</button>
 </button>
         </button>
 
@@ -1233,6 +1243,14 @@
 
     </div>
 
+</div>
+<div class="fondo-animado" aria-hidden="true">
+    <span class="particula particula-1">🍃</span>
+    <span class="particula particula-2">♻️</span>
+    <span class="particula particula-3">🌿</span>
+    <span class="particula particula-4">🍃</span>
+    <span class="particula particula-5">✦</span>
+    <span class="particula particula-6">♻️</span>
 </div>
 </body>
 </html>
