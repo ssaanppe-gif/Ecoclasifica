@@ -1212,13 +1212,25 @@
 
         </div>
 
-        <button
-            id="botonComenzar"
-            class="boton-comenzar"
-            type="button"
-        >
-            Comenzar
-            <span>→</span>
+       <button
+    id="botonComenzar"
+    class="boton-comenzar"
+    type="button"
+    onclick="
+        document
+            .getElementById('pantallaBienvenida')
+            .classList.add('bienvenida-salir');
+
+        setTimeout(() => {
+            document
+                .getElementById('pantallaBienvenida')
+                .remove();
+        }, 650);
+    "
+>
+    Comenzar
+    <span>→</span>
+</button>
         </button>
 
         <div class="bienvenida-pie">
