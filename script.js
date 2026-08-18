@@ -1996,35 +1996,59 @@ function mezclarResiduos(lista) {
 }
 
 /* =========================================================
-   RESIDUOS FRECUENTES
-   PC     → 25 residuos
-   CELULAR → 5 residuos aleatorios
-   Cambian cada vez que se carga la función
-========================================================= */
+   MOSTRAR RESIDUOS FRECUENTES
+   PC      → 25 residuos
+   CELULAR → 5 residuos
+   ========================================================= */
 
 function mostrarResiduosFrecuentes() {
 
-    if (!listaResiduos) return;
+    const lista =
+        document.getElementById("listaResiduos");
 
+    if (!lista) {
+        return;
+    }
 
-    /* PC = 25 | Celular = 5 */
+    /* -----------------------------------------------------
+       CANTIDAD SEGÚN DISPOSITIVO
+       ----------------------------------------------------- */
+
     const esCelular =
         window.innerWidth <= 700;
 
-
-    const cantidad =
+    const cantidadMostrar =
         esCelular ? 5 : 25;
 
 
-    /* Crear una copia para no alterar la base original */
-    const disponibles = [
+    /* -----------------------------------------------------
+       NOMBRES DE CATEGORÍAS
+       ----------------------------------------------------- */
+
+    const nombresCategorias = {
+        papel: "Papel y cartón",
+        plastico: "Plásticos",
+        vidrio: "Vidrio",
+        metal: "Metales",
+        organico: "Orgánicos",
+        electronico: "Electrónicos",
+        peligroso: "Peligrosos",
+        otros: "Otros"
+    };
+
+
+    /* -----------------------------------------------------
+       COPIAR Y MEZCLAR LOS RESIDUOS
+       SIN MODIFICAR LA BASE ORIGINAL
+       ----------------------------------------------------- */
+
+    const residuosMezclados = [
         ...residuos
     ];
 
 
-    /* Mezclar aleatoriamente */
     for (
-        let i = disponibles.length - 1;
+        let i = residuosMezclados.length - 1;
         i > 0;
         i--
     ) {
@@ -2034,33 +2058,40 @@ function mostrarResiduosFrecuentes() {
                 Math.random() * (i + 1)
             );
 
-
         [
-            disponibles[i],
-            disponibles[j]
+            residuosMezclados[i],
+            residuosMezclados[j]
         ] = [
-            disponibles[j],
-            disponibles[i]
+            residuosMezclados[j],
+            residuosMezclados[i]
         ];
-
     }
 
 
-    /* Elegir los que se mostrarán */
+    /* -----------------------------------------------------
+       TOMAR SOLO LOS NECESARIOS
+       ----------------------------------------------------- */
+
     const seleccionados =
-        disponibles.slice(
+        residuosMezclados.slice(
             0,
-            cantidad
+            cantidadMostrar
         );
 
 
-    /* Limpiar anteriores */
-    listaResiduos.innerHTML = "";
+    /* -----------------------------------------------------
+       LIMPIAR TARJETAS ANTERIORES
+       ----------------------------------------------------- */
+
+    lista.innerHTML = "";
 
 
-    /* Crear tarjetas */
+    /* -----------------------------------------------------
+       CREAR LAS TARJETAS
+       ----------------------------------------------------- */
+
     seleccionados.forEach(
-        residuo => {
+        (residuo) => {
 
             const tarjeta =
                 document.createElement(
@@ -2072,7 +2103,14 @@ function mostrarResiduosFrecuentes() {
                 "waste-card";
 
 
+            const categoria =
+                nombresCategorias[
+                    residuo.categoria
+                ] || "Otros";
+
+
             tarjeta.innerHTML = `
+
                 <div class="waste-card-top">
 
                     <div class="waste-card-icon">
@@ -2087,9 +2125,7 @@ function mostrarResiduosFrecuentes() {
 
 
                 <span class="waste-category">
-                    ${obtenerNombreCategoria(
-                        residuo.categoria
-                    )}
+                    ${categoria}
                 </span>
 
 
@@ -2117,15 +2153,34 @@ function mostrarResiduosFrecuentes() {
             `;
 
 
+            /* ---------------------------------------------
+               ABRIR INFORMACIÓN AL TOCAR
+               --------------------------------------------- */
+
             tarjeta.addEventListener(
                 "click",
-                () => {
-                    abrirModal(residuo);
+                function () {
+
+                    if (
+                        typeof abrirModal ===
+                        "function"
+                    ) {
+
+                        abrirModal(
+                            residuo
+                        );
+
+                    }
+
                 }
             );
 
 
-            listaResiduos.appendChild(
+            /* ---------------------------------------------
+               AGREGAR TARJETA
+               --------------------------------------------- */
+
+            lista.appendChild(
                 tarjeta
             );
 
@@ -2134,13 +2189,20 @@ function mostrarResiduosFrecuentes() {
 
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    mostrarResiduosFrecuentes();
-});
 
-function mostrarTodosLosResiduos() {
-    mostrarResiduosFrecuentes();
-}
+/* =========================================================
+   EJECUTAR AL CARGAR LA PÁGINA
+   ========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        mostrarResiduosFrecuentes();
+
+    }
+);
+
 /* =========================================================
    ABRIR MODAL DE RESIDUO
 ========================================================= */
