@@ -35,62 +35,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* =========================================================
-   CLASIFICADOR - MODO OSCURO
-========================================================= */
 
-/* Caja/sección completa que contiene el clasificador */
-body.modo-oscuro section:has(#entradaClasificador),
-body.modo-oscuro div:has(#entradaClasificador) {
-    background: #0a1510 !important;
-    color: #eafff1 !important;
-    border-color: rgba(255,255,255,0.08) !important;
-}
-
-/* Título y texto del clasificador */
-body.modo-oscuro section:has(#entradaClasificador) h2,
-body.modo-oscuro section:has(#entradaClasificador) h3,
-body.modo-oscuro section:has(#entradaClasificador) p {
-    color: #eafff1 !important;
-}
-
-/* El campo de texto */
-body.modo-oscuro #entradaClasificador {
-    background: #07130d !important;
-    color: #eafff1 !important;
-    border: 1px solid #294536 !important;
-}
-
-body.modo-oscuro #entradaClasificador::placeholder {
-    color: #8fb8a0 !important;
-}
-
-/* Botón Clasificar */
-body.modo-oscuro #entradaClasificador + button,
-body.modo-oscuro #entradaClasificador ~ button {
-    background: #14532d !important;
-    color: #ffffff !important;
-    border-color: transparent !important;
-}
-
-/* Resultado del clasificador */
-body.modo-oscuro #resultadoClasificador {
-    background: transparent !important;
-    color: #eafff1 !important;
-}
-
-/* Resultado encontrado */
-body.modo-oscuro #resultadoClasificador .clasificador-exito {
-    background: #10291b !important;
-    color: #eafff1 !important;
-    border-color: #29573b !important;
-}
-
-/* Resultado con error */
-body.modo-oscuro #resultadoClasificador .clasificador-error {
-    background: #291617 !important;
-    color: #fecaca !important;
-}
 html {
     scroll-behavior: smooth;
 }
@@ -4264,6 +4209,62 @@ body select {
         box-shadow 0.3s ease;
 }
 /* =========================================================
+   CLASIFICADOR - MODO OSCURO
+========================================================= */
+
+/* Caja/sección completa que contiene el clasificador */
+body.modo-oscuro section:has(#entradaClasificador),
+body.modo-oscuro div:has(#entradaClasificador) {
+    background: #0a1510 !important;
+    color: #eafff1 !important;
+    border-color: rgba(255,255,255,0.08) !important;
+}
+
+/* Título y texto del clasificador */
+body.modo-oscuro section:has(#entradaClasificador) h2,
+body.modo-oscuro section:has(#entradaClasificador) h3,
+body.modo-oscuro section:has(#entradaClasificador) p {
+    color: #eafff1 !important;
+}
+
+/* El campo de texto */
+body.modo-oscuro #entradaClasificador {
+    background: #07130d !important;
+    color: #eafff1 !important;
+    border: 1px solid #294536 !important;
+}
+
+body.modo-oscuro #entradaClasificador::placeholder {
+    color: #8fb8a0 !important;
+}
+
+/* Botón Clasificar */
+body.modo-oscuro #entradaClasificador + button,
+body.modo-oscuro #entradaClasificador ~ button {
+    background: #14532d !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+}
+
+/* Resultado del clasificador */
+body.modo-oscuro #resultadoClasificador {
+    background: transparent !important;
+    color: #eafff1 !important;
+}
+
+/* Resultado encontrado */
+body.modo-oscuro #resultadoClasificador .clasificador-exito {
+    background: #10291b !important;
+    color: #eafff1 !important;
+    border-color: #29573b !important;
+}
+
+/* Resultado con error */
+body.modo-oscuro #resultadoClasificador .clasificador-error {
+    background: #291617 !important;
+    color: #fecaca !important;
+}
+/* =========================================================
    BUSCADOR - MODO OSCURO COMPLETO
 ========================================================= */
 
@@ -4371,7 +4372,7 @@ body.modo-oscuro .tip-card .tip-number {
 body.modo-oscuro .tip-card .tip-icon {
     background: #183727 !important;
 }
-/* =========================================================
+ /* =========================================================
    PANTALLA DE BIENVENIDA
 ========================================================= */
 
@@ -4752,4 +4753,595 @@ body.modo-oscuro .tip-card .tip-icon {
     z-index: 10001;
     pointer-events: auto;
     cursor: pointer;
+}
+/* =========================================================
+   ANIMACIÓN DE LA PANTALLA DE BIENVENIDA
+========================================================= */
+
+.pantalla-bienvenida {
+    animation:
+        bienvenidaAparecer 0.8s ease both;
+}
+
+
+/* CONTENIDO */
+
+.bienvenida-contenido {
+    animation:
+        bienvenidaContenido 0.9s ease 0.15s both;
+}
+
+
+/* LOGO */
+
+.bienvenida-logo {
+    animation:
+        bienvenidaLogoEntrada 0.8s ease 0.25s both;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.bienvenida-logo:hover {
+    transform:
+        translateY(-6px)
+        rotate(-4deg)
+        scale(1.04);
+
+    box-shadow:
+        0 25px 55px rgba(34, 197, 94, 0.28);
+}
+
+
+/* TEXTO */
+
+.bienvenida-etiqueta {
+    animation:
+        bienvenidaTexto 0.6s ease 0.35s both;
+}
+
+
+.bienvenida-contenido h1 {
+    animation:
+        bienvenidaTexto 0.7s ease 0.45s both;
+}
+
+
+.bienvenida-contenido > p {
+    animation:
+        bienvenidaTexto 0.7s ease 0.55s both;
+}
+
+
+/* ESTADÍSTICAS */
+
+.bienvenida-datos {
+    animation:
+        bienvenidaTexto 0.7s ease 0.65s both;
+}
+
+
+.bienvenida-datos > div {
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.bienvenida-datos > div:hover {
+    transform:
+        translateY(-5px);
+
+    background:
+        rgba(255,255,255,0.09);
+}
+
+
+/* BOTÓN */
+
+.boton-comenzar {
+    animation:
+        bienvenidaBoton 0.7s ease 0.75s both;
+}
+
+
+.boton-comenzar span {
+    display: inline-block;
+
+    animation:
+        flechaMovimiento 1.4s ease-in-out infinite;
+}
+
+
+/* TEXTO FINAL */
+
+.bienvenida-pie {
+    animation:
+        bienvenidaTexto 0.7s ease 0.85s both;
+}
+
+
+/* =========================================================
+   ANIMACIONES
+========================================================= */
+
+@keyframes bienvenidaAparecer {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+@keyframes bienvenidaContenido {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(25px)
+            scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+@keyframes bienvenidaLogoEntrada {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(25px)
+            scale(0.75)
+            rotate(-10deg);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1)
+            rotate(0);
+    }
+
+}
+
+
+@keyframes bienvenidaTexto {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+@keyframes bienvenidaBoton {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(15px)
+            scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+@keyframes flechaMovimiento {
+
+    0%,
+    100% {
+        transform:
+            translateX(0);
+    }
+
+    50% {
+        transform:
+            translateX(5px);
+    }
+
+}
+
+
+/* =========================================================
+   SALIDA
+========================================================= */
+
+.pantalla-bienvenida.bienvenida-salir {
+    opacity: 0;
+
+    transform:
+        scale(1.04);
+
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+
+/* =========================================================
+   RESPETO A REDUCIR MOVIMIENTO
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .pantalla-bienvenida,
+    .bienvenida-contenido,
+    .bienvenida-logo,
+    .bienvenida-etiqueta,
+    .bienvenida-contenido h1,
+    .bienvenida-contenido > p,
+    .bienvenida-datos,
+    .boton-comenzar,
+    .bienvenida-pie,
+    .bienvenida-datos > div,
+    .bienvenida-logo:hover {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+    }
+
+}
+/* =========================================================
+   FONDO ANIMADO ECOCLASIFICA
+========================================================= */
+
+.fondo-animado {
+    position: fixed;
+    inset: 0;
+
+    z-index: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(34, 197, 94, 0.06),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(16, 185, 129, 0.05),
+            transparent 30%
+        );
+}
+
+
+/* Mantener el contenido por encima */
+
+body > *:not(.fondo-animado):not(.pantalla-bienvenida) {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* PARTICULAS */
+
+.particula {
+    position: absolute;
+
+    display: block;
+
+    opacity: 0.16;
+
+    user-select: none;
+
+    filter:
+        blur(0.2px);
+
+    will-change:
+        transform;
+
+    animation:
+        particulaFlotar linear infinite;
+}
+
+
+/* Posiciones */
+
+.particula-1 {
+    left: 8%;
+    top: 18%;
+
+    font-size: 2.2rem;
+
+    animation-duration: 14s;
+    animation-delay: -3s;
+}
+
+.particula-2 {
+    left: 25%;
+    top: 70%;
+
+    font-size: 2rem;
+
+    opacity: 0.11;
+
+    animation-duration: 18s;
+    animation-delay: -8s;
+}
+
+.particula-3 {
+    left: 45%;
+    top: 28%;
+
+    font-size: 2.6rem;
+
+    opacity: 0.10;
+
+    animation-duration: 20s;
+    animation-delay: -12s;
+}
+
+.particula-4 {
+    left: 70%;
+    top: 65%;
+
+    font-size: 2.3rem;
+
+    opacity: 0.13;
+
+    animation-duration: 16s;
+    animation-delay: -5s;
+}
+
+.particula-5 {
+    left: 84%;
+    top: 25%;
+
+    font-size: 1.7rem;
+
+    opacity: 0.12;
+
+    animation-duration: 12s;
+    animation-delay: -7s;
+}
+
+.particula-6 {
+    left: 60%;
+    top: 82%;
+
+    font-size: 2rem;
+
+    opacity: 0.10;
+
+    animation-duration: 19s;
+    animation-delay: -10s;
+}
+
+
+/* MOVIMIENTO */
+
+@keyframes particulaFlotar {
+
+    0% {
+        transform:
+            translate3d(0, 30px, 0)
+            rotate(0deg);
+    }
+
+    25% {
+        transform:
+            translate3d(35px, -25px, 0)
+            rotate(8deg);
+    }
+
+    50% {
+        transform:
+            translate3d(-20px, -55px, 0)
+            rotate(-6deg);
+    }
+
+    75% {
+        transform:
+            translate3d(-40px, -15px, 0)
+            rotate(7deg);
+    }
+
+    100% {
+        transform:
+            translate3d(0, 30px, 0)
+            rotate(0deg);
+    }
+}
+
+
+/* MODO OSCURO */
+
+body.modo-oscuro .fondo-animado {
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(34, 197, 94, 0.08),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(16, 185, 129, 0.07),
+            transparent 30%
+        );
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .particula {
+        opacity: 0.10;
+
+        font-size: 1.6rem;
+    }
+
+}
+
+
+/* REDUCIR MOVIMIENTO */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .particula {
+        animation: none !important;
+    }
+
+}
+/* =========================================================
+   ANIMACIONES AL HACER SCROLL
+========================================================= */
+
+.animacion-scroll {
+    opacity: 0;
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.animacion-scroll.animacion-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Aparición un poco más elegante para las secciones */
+
+section.animacion-scroll {
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+/* Tarjetas */
+
+.waste-card.animacion-scroll,
+.category-card.animacion-scroll,
+.guardado-card.animacion-scroll,
+.estadistica-card.animacion-scroll,
+.tip-card.animacion-scroll,
+.guia-card.animacion-scroll {
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Retraso visual */
+
+.waste-card.animacion-scroll:nth-child(2),
+.category-card.animacion-scroll:nth-child(2) {
+    transition-delay: 0.05s;
+}
+
+.waste-card.animacion-scroll:nth-child(3),
+.category-card.animacion-scroll:nth-child(3) {
+    transition-delay: 0.10s;
+}
+
+.waste-card.animacion-scroll:nth-child(4),
+.category-card.animacion-scroll:nth-child(4) {
+    transition-delay: 0.15s;
+}
+
+.waste-card.animacion-scroll:nth-child(5),
+.category-card.animacion-scroll:nth-child(5) {
+    transition-delay: 0.20s;
+}
+
+/* =========================================================
+   OPTIMIZACIÓN MÓVIL
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .fondo-animado .particula {
+        animation-duration: 28s;
+        opacity: 0.06;
+    }
+
+    .waste-card,
+    .category-card,
+    .guardado-card,
+    .estadistica-card,
+    .tip-card,
+    .guia-card,
+    .result-card,
+    .quiz-card {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06) !important;
+    }
+
+    .waste-card:hover,
+    .category-card:hover,
+    .guardado-card:hover,
+    .estadistica-card:hover,
+    .tip-card:hover,
+    .guia-card:hover {
+        transform: none !important;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .fondo-animado .particula {
+        display: none;
+    }
+
+    .animacion-scroll {
+        transition: opacity 0.3s ease !important;
+        transform: none !important;
+    }
+
+    .waste-card,
+    .category-card,
+    .guardado-card,
+    .estadistica-card,
+    .tip-card,
+    .guia-card,
+    .result-card,
+    .quiz-card {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+    }
 }
