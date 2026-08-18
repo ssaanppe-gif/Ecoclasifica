@@ -2137,6 +2137,10 @@ function mostrarResiduosFrecuentes() {
 document.addEventListener("DOMContentLoaded", () => {
     mostrarResiduosFrecuentes();
 });
+
+function mostrarTodosLosResiduos() {
+    mostrarResiduosFrecuentes();
+}
 /* =========================================================
    ABRIR MODAL DE RESIDUO
 ========================================================= */
