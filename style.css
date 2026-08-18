@@ -4725,3 +4725,31 @@ body.modo-oscuro .tip-card .tip-icon {
         opacity 0.65s ease,
         transform 0.65s ease;
 }
+/* =========================================================
+   CERRAR BIENVENIDA SIN JAVASCRIPT
+========================================================= */
+
+#bienvenidaControl:checked ~ #pantallaBienvenida {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: scale(1.03);
+
+    transition:
+        opacity 0.65s ease,
+        visibility 0s linear 0.65s,
+        transform 0.65s ease;
+}
+
+
+#pantallaBienvenida {
+    pointer-events: auto;
+}
+
+
+#pantallaBienvenida .boton-comenzar {
+    position: relative;
+    z-index: 10001;
+    pointer-events: auto;
+    cursor: pointer;
+}
