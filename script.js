@@ -4270,3 +4270,61 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 });
+/* =========================================================
+   ANIMACIONES AL HACER SCROLL
+========================================================= */
+
+const observadorAnimaciones =
+    new IntersectionObserver(
+        (entradas) => {
+
+            entradas.forEach((entrada) => {
+
+                if (entrada.isIntersecting) {
+
+                    entrada.target.classList.add(
+                        "animacion-visible"
+                    );
+
+                    observadorAnimaciones.unobserve(
+                        entrada.target
+                    );
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.12
+        }
+    );
+
+
+function activarAnimacionesScroll() {
+
+    const elementos =
+        document.querySelectorAll(
+            "section, .section-heading, .waste-card, .category-card, .guardado-card, .estadistica-card, .tip-card, .guia-card, .quiz-card, .result-card"
+        );
+
+
+    elementos.forEach((elemento) => {
+
+        elemento.classList.add(
+            "animacion-scroll"
+        );
+
+        observadorAnimaciones.observe(
+            elemento
+        );
+
+    });
+
+}
+
+
+document.addEventListener(
+    "DOMContentLoaded",
+    activarAnimacionesScroll
+);
